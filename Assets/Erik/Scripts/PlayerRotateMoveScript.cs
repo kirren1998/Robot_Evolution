@@ -9,6 +9,7 @@ public class PlayerRotateMoveScript : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     [SerializeField] PhysicsMaterial2D[] mat;
     bool IsCharging;
+    float chargeTime;
 
     void Start()
     {
@@ -25,22 +26,32 @@ public class PlayerRotateMoveScript : MonoBehaviour
                 rb.angularVelocity -= Input.GetAxis("Horizontal") * rotationSpeed;
             if (Input.GetKey(KeyCode.Space))
             {
-                if (rb.angularVelocity < 0)
+                if (rb.angularVelocity < 20)
                     rb.angularVelocity += rotationSpeed * 10;
-                else if (rb.angularVelocity > 0)
+                else if (rb.angularVelocity > -20)
                     rb.angularVelocity -= rotationSpeed * 10;
+                else rb.angularVelocity = 0;
 
             }
+        }
+        else
+        {
+            if (rb.angularVelocity < MAXIMUMVELOCITY * 2 && rb.angularVelocity > -MAXIMUMVELOCITY * 2)
+                rb.angularVelocity -= Input.GetAxis("Horizontal") * rotationSpeed * 2;
         }
         if (IsCharging) { Charge(); GetComponent<Rigidbody2D>().sharedMaterial = mat[1]; } else GetComponent<Rigidbody2D>().sharedMaterial = mat[0];
     }
     private void Charge()
     {
         rb.velocity = Vector2.zero;
+        chargeTime += Time.fixedDeltaTime;
+        if (chargeTime > 1)
+            chargeTime -= 1;
     }
     private IEnumerator AutoStopCharge()
     {
-        yield return new WaitForSecondsRealtime(1);
+        yield return new WaitForSecondsRealtime(3);/*
+        rb.AddForce(new Vector2(chargeTime * 10, 0));*/
         IsCharging = false;
     }
 }
