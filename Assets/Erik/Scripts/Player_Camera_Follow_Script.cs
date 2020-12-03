@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DontRotateTheCam : MonoBehaviour
+public class Player_Camera_Follow_Script : MonoBehaviour
 {
-    [SerializeField] GameObject playerCharacter;
-    [SerializeField] Rigidbody2D rb;
-    [SerializeField] Camera cam;
+    GameObject playerCharacter;
+    Rigidbody2D rb;
+    Camera cam;
     // Start is called before the first frame update
     void Start()
     {
+        playerCharacter = transform.parent.gameObject;
+        rb = GetComponent<Rigidbody2D>();
+        cam = GetComponent<Camera>();
     }
 
     // Update is called once per frame

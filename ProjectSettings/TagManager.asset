@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Mech
+  - Mech_weapon
   layers:
   - Default
   - TransparentFX
@@ -13,8 +15,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Player
   - Ground
+  - Enemies
+  - Mech
   - 
   - 
   - 
@@ -33,9 +37,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - No_Interaction
   - 
   m_SortingLayers:
   - name: Default
