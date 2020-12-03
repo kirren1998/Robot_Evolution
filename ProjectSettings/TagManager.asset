@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Mech
   - Mech_weapon
+  - Enemy
+  - Vent
   layers:
   - Default
   - TransparentFX
