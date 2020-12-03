@@ -13,13 +13,13 @@ public class Player_Ball_Movement_And_Dash : MonoBehaviour
     [SerializeField] float chargeTime;
 
     public int Damage = 0;
-    public bool IsCharging, hasMech = false;
+    public bool IsCharging, hasMech, inVent;
 
     LayerMask layer = 1 << 9;
 
     void Update()
     {
-        if (hasMech) return;
+        if (hasMech || inVent) return;
         Debug.DrawRay(transform.position, new Vector2(0, -0.15f));
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.15f, layer);
         if (hit)

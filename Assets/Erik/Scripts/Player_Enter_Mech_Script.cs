@@ -25,6 +25,7 @@ public class Player_Enter_Mech_Script : MonoBehaviour
     }
     private void SuckToMech()
     {
+        if (rb.rotation == 0) rb.angularVelocity = 0;
         timer += Time.deltaTime;
         if (timer < 1f)
             rb.velocity = new Vector2((localMech.transform.position.x - transform.position.x) * 10, (localMech.transform.position.y - transform.position.y) * 10);
