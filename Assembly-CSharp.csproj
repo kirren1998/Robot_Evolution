@@ -58,7 +58,9 @@
   <ItemGroup>
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Mech_Movement.cs" />
     <Compile Include="Assets\Erik\Scripts\Shit_Holder_script.cs" />
+    <Compile Include="Assets\Erik\Scripts\Vent_Scripts\Vent_Holder_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Vent_Scripts\Vent_Node_Wrong_Path_Script.cs" />
+    <Compile Include="Assets\Erik\Scripts\Enemy_AI_Patrolling_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Camera_Follow_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Enter_Mech_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Vent_Scripts\InVent_Node_Movement.cs" />
@@ -73,8 +75,6 @@
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Face_Tracking.cs" />
     <Compile Include="Assets\Erik\Scripts\Vent_Scripts\Vent_Entrance_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Ball_Movement_And_Dash.cs" />
-    <Compile Include="Assets\Erik\Scripts\Enemy_AI_Patrolling_Script.cs" />
-    <Compile Include="Assets\Erik\Scripts\Vent_Scripts\Vent_Holder_Script.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Erik\test.txt" />

@@ -13,7 +13,7 @@ public class Player_Ball_Movement_And_Dash : MonoBehaviour
     [SerializeField] float chargeTimer, chargeTime;
 
     public int Damage = 0;
-    public bool IsCharging, hasMech, inVent, timeStop;
+    public bool IsCharging, hasMech, inVent, timeStop, chipUpgrade;
 
     LayerMask layer = 1 << 9;
 
@@ -29,7 +29,12 @@ public class Player_Ball_Movement_And_Dash : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.15f, layer);
         if (hit)
             if (Input.GetMouseButtonDown(0)) { Damage = 0; chargeTimer = 0; IsCharging = true; StartCoroutine(AutoStopCharge()); }
-        if (Input.GetMouseButtonUp(0) && IsCharging) { IsCharging = false; StopAllCoroutines(); rb.velocity = new Vector2(-rb.angularVelocity * Damage / dashSlow, 0);
+        if (Input.GetMouseButtonUp(0) && IsCharging) 
+        { 
+            IsCharging = false; 
+            StopAllCoroutines();
+            rb.velocity = new Vector2(-rb.angularVelocity * Damage / dashSlow, 0);
+            if (!chipUpgrade) Damage = 0;
         }
     }
     private void FixedUpdate()
@@ -67,6 +72,7 @@ public class Player_Ball_Movement_And_Dash : MonoBehaviour
         yield return new WaitForSecondsRealtime(chargeTime * 3);
         IsCharging = false;
         rb.velocity = new Vector2(-rb.angularVelocity * Damage / dashSlow, 0 );
+        if (!chipUpgrade) Damage = 0;
     }
     public void getInMech(GameObject mech)
     {
