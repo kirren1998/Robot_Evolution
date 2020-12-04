@@ -39,15 +39,6 @@ public class Player_Ball_Movement_And_Dash : MonoBehaviour
         {
             if (rb.angularVelocity < MaximumVelocity && rb.angularVelocity > -MaximumVelocity)
                 rb.angularVelocity -= Input.GetAxis("Horizontal") * rotationSpeed;
-            /*if (Input.GetKey(KeyCode.Space))
-            {
-                if (rb.angularVelocity < 20)
-                    rb.angularVelocity += rotationSpeed;
-                else if (rb.angularVelocity < -20)
-                    rb.angularVelocity -= rotationSpeed;
-                else { Debug.Log("shit"); rb.angularVelocity = 0; rb.velocity = Vector2.zero; }
-
-            }*/ // Skipping this for now, might implement later
         }
         else
         {
@@ -68,13 +59,12 @@ public class Player_Ball_Movement_And_Dash : MonoBehaviour
         {
             chargeTimer = 0;
             Damage++;
-            //Activate the particle effect and add damage to the spin
+            //Activate the particle effect
         }
     }
     private IEnumerator AutoStopCharge()
     {
-        yield return new WaitForSecondsRealtime(chargeTime * 3);/*
-        rb.AddForce(new Vector2(chargeTime * 10, 0));*/
+        yield return new WaitForSecondsRealtime(chargeTime * 3);
         IsCharging = false;
         rb.velocity = new Vector2(-rb.angularVelocity * Damage / dashSlow, 0 );
     }
