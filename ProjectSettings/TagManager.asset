@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Mech
   - Mech_weapon
+  - Enemy
+  - Vent
+  - AI_VisionCones
   layers:
   - Default
   - TransparentFX
@@ -19,8 +22,8 @@ TagManager:
   - Ground
   - Enemies
   - Mech
-  - 
-  - 
+  - EnemyPhysicalBody
+  - AI_Detection
   - 
   - 
   - 

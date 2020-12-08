@@ -26,9 +26,9 @@ public class Mech_Movement_1 : MonoBehaviour
     }
     private IEnumerator Attack()
     {
-        transform.GetChild(1).GetComponent<BoxCollider2D>().enabled = true;
+        transform.GetChild(1).gameObject.SetActive(true);
         yield return new WaitForSecondsRealtime(0.1f);
-        transform.GetChild(1).GetComponent<BoxCollider2D>().enabled = false;
+        transform.GetChild(1).gameObject.SetActive(false);
     }
     private void Exit()
     {

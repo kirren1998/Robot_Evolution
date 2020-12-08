@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy_Damage_Player_Script : MonoBehaviour
 {
+    
     [SerializeField] int health = 3;
     [Range(0, 5)] [SerializeField] int damage = 1;
     private void OnTriggerEnter2D(Collider2D player)
