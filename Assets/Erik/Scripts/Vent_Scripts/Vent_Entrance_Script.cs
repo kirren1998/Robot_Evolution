@@ -6,15 +6,14 @@ public class Vent_Entrance_Script : MonoBehaviour
 {
     [SerializeField] bool canGoIn;
     [SerializeField] GameObject Player;
-    Canvas yeet;
 
     private void Start()
     {
-        //yeet = GameObject.Find("")
         Player = GameObject.Find("Player");
     }
     private void OnTriggerEnter2D(Collider2D player)
     {
+        Debug.Log("Shjt");
         if (player.CompareTag("Player") || player.isTrigger)
             canGoIn = true;
     }

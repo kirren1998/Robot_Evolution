@@ -7,7 +7,7 @@ public class Player_Ball_Vent_Script : MonoBehaviour
     public float ballSpeed;
     Rigidbody2D rb;
     public GameObject currentNode;
-    public bool inVent;
+    public bool inVent = false;
 
     private void Start()
     {
@@ -21,8 +21,7 @@ public class Player_Ball_Vent_Script : MonoBehaviour
         rb.velocity = speed;
         if (dir.magnitude < 0.06f)
         {
-            if (currentNode == null) return;
-            if (currentNode.GetComponent<Vent_Node_Wrong_Path_Script>().nextInLine != null && currentNode.CompareTag("Vent"))
+            if (currentNode.GetComponent<Vent_Node_Wrong_Path_Script>().nextInLine != null)
             {
                 if (!currentNode.GetComponent<Vent_Node_Wrong_Path_Script>().leverBool) currentNode = 
                         currentNode.GetComponent<Vent_Node_Wrong_Path_Script>().nextInLine;

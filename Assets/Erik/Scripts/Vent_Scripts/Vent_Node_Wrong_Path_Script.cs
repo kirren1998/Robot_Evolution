@@ -39,11 +39,13 @@ public class Vent_Node_Wrong_Path_Script : MonoBehaviour
         float distance = Vector3.Distance(start.transform.position, end.transform.position);
         int ventCount = Mathf.RoundToInt(distance / dist);
         Vector3 direction = (end.transform.position - start.transform.position).normalized;
+        Quaternion lookDir = Quaternion.LookRotation(direction);
         for (int a = 0; a < ventCount - 1; a++)
         {
             GameObject vent = Instantiate(newVentPath, start.transform.position + (direction * ((a + 1) * dist)),
                 Quaternion.FromToRotation(start.transform.position,
                 end.transform.position).normalized, GameObject.Find("ShitHolder").transform);
+            vent.transform.rotation = Quaternion.Euler(0, 0, -lookDir.eulerAngles.x);
             start.GetComponent<Vent_Node_Wrong_Path_Script>().ventPath.Add(vent);
             if (!active)
                 yield return new WaitForSecondsRealtime(0.14f);
