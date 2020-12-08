@@ -8,6 +8,7 @@ TagManager:
   - Mech_weapon
   - Enemy
   - Vent
+  - AI_VisionCones
   layers:
   - Default
   - TransparentFX
