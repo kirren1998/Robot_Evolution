@@ -3,9 +3,6 @@ using UnityEditor;
 
 public class Makealine : EditorWindow
 {
-    float dist;
-
-    
     [MenuItem("Window/VentBuilder")]
     public static void ShowWindow()
     {
@@ -24,10 +21,10 @@ public class Makealine : EditorWindow
             if (Selection.objects.Length == 0) { Debug.LogError("Please select an entrance named 'StartNode'"); return; }
             Vent_Holder_Script VHS = Selection.gameObjects[0].transform.parent.GetComponent<Vent_Holder_Script>();
             GameObject shit = GameObject.Find("ShitHolder");
-            dist = 0.25f;
             if (Selection.gameObjects[0].name != "StartNode") { Debug.LogError("The selected GameObject is not a StartNode!"); return; }
             GameObject ventEntrance = Selection.gameObjects[0].transform.parent.gameObject;
             GameObject ventPath = shit.GetComponent<Shit_Holder_script>().Shit[0], lever = shit.GetComponent<Shit_Holder_script>().Shit[1];
+            float dist = 0.25f;
             int iterations = 2;
             for (int me = 0; me < iterations; me++)
             {
@@ -42,9 +39,7 @@ public class Makealine : EditorWindow
                     Vector3 direction = (end.transform.position - start.transform.position).normalized;
                     int count = start.GetComponent<Vent_Node_Wrong_Path_Script>().ventPath.Count;
                     for (int d = 0; d < count; d++)
-                    {
                         DestroyImmediate(start.GetComponent<Vent_Node_Wrong_Path_Script>().ventPath[d]);
-                    }
                     start.GetComponent<Vent_Node_Wrong_Path_Script>().ventPath.Clear();
                     start.GetComponent<Vent_Node_Wrong_Path_Script>().nextInLine = end;
                     for (int a = 0; a < ventCount - 1; a++)

@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class Vent_Node_Wrong_Path_Script : MonoBehaviour
 {
-    public bool leverBool;
+    public bool leverBool, going, active;
     public List<GameObject> ventPath;
     public GameObject nextInLine;
+    private void Update()
+    {
+        if (going) if (Input.GetKeyDown(KeyCode.E)) active = true;
+    }
     public void StartPathChange()
     {
         leverBool = !leverBool;
@@ -14,12 +18,14 @@ public class Vent_Node_Wrong_Path_Script : MonoBehaviour
     }
     private IEnumerator ChangePath()
     {
+        going = true;
         int count = ventPath.Count;
         for (int i = 0; i < count; i++)
         {
             Destroy(ventPath[ventPath.Count - 1]);
             ventPath.RemoveAt(ventPath.Count - 1);
-            yield return new WaitForSecondsRealtime(0.14f);
+            if (!active)
+                yield return new WaitForSecondsRealtime(0.14f);
         }
 
         GameObject shit = GameObject.Find("ShitHolder");
@@ -39,8 +45,11 @@ public class Vent_Node_Wrong_Path_Script : MonoBehaviour
                 Quaternion.FromToRotation(start.transform.position,
                 end.transform.position).normalized, GameObject.Find("ShitHolder").transform);
             start.GetComponent<Vent_Node_Wrong_Path_Script>().ventPath.Add(vent);
-            yield return new WaitForSecondsRealtime(0.14f);
+            if (!active)
+                yield return new WaitForSecondsRealtime(0.14f);
         }
         GameObject.Find("Main Camera").GetComponent<Player_Camera_Follow_Script>().EndVentWatching();
+        going = false;
+        active = false;
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player_Camera_Follow_Script : MonoBehaviour
 {
     #region Variables
-    bool followPlayer = true, startFunction = true;
+    public bool followPlayer = true, startFunction = true;
     GameObject playerCharacter, vent;
     Rigidbody2D rb;
     Camera cam;

@@ -9,29 +9,38 @@ public class Lever_Script : MonoBehaviour
     public GameObject leverConnection;
     [SerializeField] Canvas nothin;
     Text textPopup;
+    GameObject cam;
 
 
     private void Start()
     {
+        cam = GameObject.Find("Main Camera");
         textPopup = nothin.transform.GetChild(0).GetComponent<Text>();
         textPopup.transform.position = new Vector2(transform.position.x, transform.position.y + 0.1f);
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        textPopup.enabled = true;
-        inside = true;
     }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && inside)
         {
+            if (!cam.GetComponent<Player_Camera_Follow_Script>().followPlayer) return;
             GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
-            /*if (PlayerPrefs.GetInt("DifficultyLevel") >= 2)*/ GameObject.Find("Main Camera").GetComponent<Player_Camera_Follow_Script>().WatchVentStructure(leverConnection);
+            /*if (PlayerPrefs.GetInt("DifficultyLevel") >= 2)*/ cam.GetComponent<Player_Camera_Follow_Script>().WatchVentStructure(leverConnection);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {/*
+            textPopup.enabled = true;*/
+            inside = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        textPopup.enabled = false;
-        inside = false;
+        if (collision.CompareTag("Player"))
+        {/*
+            textPopup.enabled = false;*/
+            inside = false;
+        }
     }
 }
