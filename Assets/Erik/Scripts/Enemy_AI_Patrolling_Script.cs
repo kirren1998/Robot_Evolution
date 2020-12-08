@@ -44,7 +44,11 @@ public class Enemy_AI_Patrolling_Script : MonoBehaviour
                 seen = true;
             else seen = false;
         }
-        else;
+        else
+        {
+            seen = false;
+        }
+
         //The base unaware patrolling;
         RaycastHit2D wall, ground;
         wall = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.right, 0.5f * transform.localScale.x, groundAndWall);

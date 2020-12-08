@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Vent_Entrance_Script : MonoBehaviour
 {
-    bool canGoIn;
-    GameObject Player;
+    [SerializeField] bool canGoIn;
+    [SerializeField] GameObject Player;
     Canvas yeet;
 
     private void Start()
@@ -15,13 +15,13 @@ public class Vent_Entrance_Script : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D player)
     {
-        if (!player.CompareTag("Player") || !player.isTrigger) return;
+        if (player.CompareTag("Player") || player.isTrigger)
             canGoIn = true;
     }
     private void OnTriggerExit2D(Collider2D player)
     {
-        if (!player.CompareTag("Player") || !player.isTrigger) return;
-        canGoIn = false;
+        if (player.CompareTag("Player") || player.isTrigger)
+            canGoIn = false;
     }
     private void Update()
     {

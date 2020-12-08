@@ -10,6 +10,22 @@ public class Makealine : EditorWindow
     }
     private void OnGUI()
     {
+        if (GUILayout.Button("Create a vent"))
+        {
+            GameObject node = new GameObject("Node"), entrance = new GameObject("VentRance"), start = new GameObject("StartNode");
+            entrance.AddComponent<Vent_Holder_Script>();
+            start.AddComponent<BoxCollider2D>();
+            start.AddComponent<SpriteRenderer>();
+            start.AddComponent<Vent_Entrance_Script>();
+            start.AddComponent<Vent_Node_Wrong_Path_Script>();
+            start.GetComponent<BoxCollider2D>().isTrigger = true;
+            start.transform.parent = entrance.transform;
+            start.transform.localPosition = Vector2.zero;
+            node.AddComponent<SpriteRenderer>();
+            node.AddComponent<Vent_Node_Wrong_Path_Script>();
+            node.transform.parent = entrance.transform;
+            node.transform.localPosition = Vector2.zero;
+        }
         GUILayout.Label("Simply select the entrance of a vent,", EditorStyles.boldLabel);
         GUILayout.Label("click the 'Click here to make a path' button,", EditorStyles.boldLabel);
         GUILayout.Label("and it will make a path.", EditorStyles.boldLabel);
@@ -36,17 +52,21 @@ public class Makealine : EditorWindow
                     end = ventEntrance.transform.GetChild(i).gameObject;
                     float distance = Vector3.Distance(start.transform.position, end.transform.position);
                     int ventCount = Mathf.RoundToInt(distance / dist);
-                    Vector3 direction = (end.transform.position - start.transform.position).normalized;
-                    int count = start.GetComponent<Vent_Node_Wrong_Path_Script>().ventPath.Count;
-                    for (int d = 0; d < count; d++)
-                        DestroyImmediate(start.GetComponent<Vent_Node_Wrong_Path_Script>().ventPath[d]);
-                    start.GetComponent<Vent_Node_Wrong_Path_Script>().ventPath.Clear();
+                    Vector3 direction = (end.transform.position - start.transform.position);
+                    Quaternion lookDir = Quaternion.LookRotation(direction);
+                    if (start.GetComponent<Vent_Node_Wrong_Path_Script>().ventPath != null)
+                    {
+                        int count = start.GetComponent<Vent_Node_Wrong_Path_Script>().ventPath.Count;
+                        for (int d = 0; d < count; d++)
+                            DestroyImmediate(start.GetComponent<Vent_Node_Wrong_Path_Script>().ventPath[d]);
+                        start.GetComponent<Vent_Node_Wrong_Path_Script>().ventPath.Clear();
+                    }
                     start.GetComponent<Vent_Node_Wrong_Path_Script>().nextInLine = end;
                     for (int a = 0; a < ventCount - 1; a++)
                     {
-                        GameObject vent = Instantiate(ventPath, start.transform.position + (direction * ((a + 1) * dist)), 
-                            Quaternion.FromToRotation(start.transform.position, 
-                            end.transform.position).normalized, shit.transform);
+                        GameObject vent = Instantiate(ventPath, start.transform.position + (direction.normalized * ((a + 1) * dist)), 
+                            Quaternion.identity, shit.transform);
+                        vent.transform.rotation = Quaternion.Euler(0, 0, lookDir.eulerAngles.x);
                         start.GetComponent<Vent_Node_Wrong_Path_Script>().ventPath.Add(vent);
                     }
                     if (start.transform.childCount > 0)

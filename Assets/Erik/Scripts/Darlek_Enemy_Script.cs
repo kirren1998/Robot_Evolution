@@ -19,16 +19,19 @@ public class Darlek_Enemy_Script : MonoBehaviour
     {
         if (GetComponentInChildren<Enemy_AI_Patrolling_Script>().seen)
         {
-            if (torch == null)
-            {
-                Quaternion nee = Quaternion.LookRotation(transform.position - player.transform.position);
-                torch.transform.rotation = new Quaternion(0, 0, 0, 0);
-                Debug.Log(Quaternion.LookRotation(transform.position - player.transform.position));
-                torch.color = Color.red;
-            }
             Vector3 dir = torch.transform.position - player.transform.position;
             Quaternion shit = Quaternion.LookRotation(dir);
             torch.transform.rotation = Quaternion.Euler(0, 0, shit.eulerAngles.x - 90);
+            if (torch.pointLightInnerAngle > 15) torch.pointLightInnerAngle -= Time.deltaTime * 100;
+            if (torch.pointLightOuterAngle > torch.pointLightInnerAngle + 1) torch.pointLightOuterAngle -= Time.deltaTime * 100;
+            torch.color = new Color(1, Mathf.Clamp(torch.color.g - Time.deltaTime, 0, 1), 0);
+        }
+        else
+        {
+            torch.transform.rotation = Quaternion.Euler(0, 0, -90);
+            if (torch.pointLightInnerAngle < 25) torch.pointLightInnerAngle += Time.deltaTime * 50;
+            if (torch.pointLightOuterAngle < 95) torch.pointLightOuterAngle += Time.deltaTime * 50;
+            torch.color = new Color(1, Mathf.Clamp(torch.color.g + Time.deltaTime / 10, 0, 1), 0);
         }
     }
 }
