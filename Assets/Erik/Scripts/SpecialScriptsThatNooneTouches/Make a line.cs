@@ -65,8 +65,11 @@ public class Makealine : EditorWindow
                     for (int a = 0; a < ventCount - 1; a++)
                     {
                         GameObject vent = Instantiate(ventPath, start.transform.position + (direction.normalized * ((a + 1) * dist)), 
-                            Quaternion.identity, shit.transform);
-                        vent.transform.rotation = Quaternion.Euler(0, 0, -lookDir.eulerAngles.x);
+                            Quaternion.identity, shit.transform); 
+                        if (direction.x < 0)
+                            vent.transform.rotation = Quaternion.Euler(0, 0, lookDir.eulerAngles.x);
+                        else
+                            vent.transform.rotation = Quaternion.Euler(0, 0, -lookDir.eulerAngles.x);
                         start.GetComponent<Vent_Node_Wrong_Path_Script>().ventPath.Add(vent);
                     }
                     if (start.transform.childCount > 0)

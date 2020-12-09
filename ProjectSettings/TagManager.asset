@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Vent
   - AI_VisionCones
+  - Enemy_Weapon
   layers:
   - Default
   - TransparentFX
@@ -24,9 +25,9 @@ TagManager:
   - Mech
   - EnemyPhysicalBody
   - AI_Detection
-  - 
-  - 
-  - 
+  - Enemy_Weapon
+  - Interactables
+  - Bounds_For_AI
   - 
   - 
   - 

@@ -19,7 +19,7 @@ public class Player_Ball_Vent_Script : MonoBehaviour
         Vector2 dir = currentNode.transform.position - transform.position;
         Vector2 speed = dir.normalized * 3 /*Mathf.Abs(ballSpeed)*/;
         rb.velocity = speed;
-        if (dir.magnitude < 0.06f)
+        if (dir.magnitude < 0.07f)
         {
             if (currentNode.GetComponent<Vent_Node_Wrong_Path_Script>().nextInLine != null)
             {

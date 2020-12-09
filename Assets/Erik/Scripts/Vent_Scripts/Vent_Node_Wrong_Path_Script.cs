@@ -45,7 +45,10 @@ public class Vent_Node_Wrong_Path_Script : MonoBehaviour
             GameObject vent = Instantiate(newVentPath, start.transform.position + (direction * ((a + 1) * dist)),
                 Quaternion.FromToRotation(start.transform.position,
                 end.transform.position).normalized, GameObject.Find("ShitHolder").transform);
-            vent.transform.rotation = Quaternion.Euler(0, 0, -lookDir.eulerAngles.x);
+            if (direction.x < 0)
+                vent.transform.rotation = Quaternion.Euler(0, 0, lookDir.eulerAngles.x);
+            else
+                vent.transform.rotation = Quaternion.Euler(0, 0, -lookDir.eulerAngles.x);
             start.GetComponent<Vent_Node_Wrong_Path_Script>().ventPath.Add(vent);
             if (!active)
                 yield return new WaitForSecondsRealtime(0.14f);

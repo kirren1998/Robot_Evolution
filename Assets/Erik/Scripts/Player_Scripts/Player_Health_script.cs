@@ -6,12 +6,14 @@ public class Player_Health_script : MonoBehaviour
 {
     [SerializeField] GameObject PFT;
     [SerializeField] GameObject Chrapnell;
+    public bool canTakeDamage = true;
     int Health = 5;
     public void TakeDamage(int Damage)
     {
         Health -= Damage;
         if (Health <= 0)
             Death();
+        StartCoroutine(Damaged());
     }
     public void Death()
     {
@@ -25,6 +27,15 @@ public class Player_Health_script : MonoBehaviour
         PFT.GetComponent<Player_Face_Tracking>().enabled = false;
         PFT.GetComponent<Rigidbody2D>().gravityScale = 1;
         PFT.GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity;
+        PFT.GetComponent<BoxCollider2D>().enabled = true;
         Destroy(gameObject);
+    }
+    private IEnumerator Damaged()
+    {
+        canTakeDamage = false;
+        GetComponent<SpriteRenderer>().color = Color.red;
+        yield return new WaitForSecondsRealtime(1f);
+        GetComponent<SpriteRenderer>().color = Color.white;
+        canTakeDamage = true;
     }
 }
