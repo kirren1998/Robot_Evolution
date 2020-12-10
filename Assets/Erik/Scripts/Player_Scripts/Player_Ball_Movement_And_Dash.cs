@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Player_Ball_Movement_And_Dash : MonoBehaviour
 {
+    [Range(1000, 10000)] [SerializeField] int stoppingPower;
     [Range(500, 1000)] [SerializeField] int dashSlow;
     [Range(0, 10000)] [SerializeField] int MaximumVelocity;
     [Range(0, 100)][SerializeField] float rotationSpeed;
-
     [SerializeField] Rigidbody2D rb;
     [SerializeField] PhysicsMaterial2D[] mat;
     [SerializeField] float chargeTimer, chargeTime;
@@ -28,7 +28,8 @@ public class Player_Ball_Movement_And_Dash : MonoBehaviour
         Debug.DrawRay(transform.position, new Vector2(0, -0.15f));
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.15f, layer);
         if (hit)
-            if (Input.GetMouseButtonDown(0)) { Damage = 0; chargeTimer = 0; IsCharging = true; StartCoroutine(AutoStopCharge()); }
+            if (Input.GetMouseButtonDown(0) && Mathf.Abs(rb.angularVelocity) < 400)
+                { Damage = 0; chargeTimer = 0; IsCharging = true; StartCoroutine(AutoStopCharge()); }
         if (Input.GetMouseButtonUp(0) && IsCharging) 
         { 
             IsCharging = false; 
@@ -42,8 +43,29 @@ public class Player_Ball_Movement_And_Dash : MonoBehaviour
         if (timeStop || hasMech || inVent) return;
         if (!IsCharging)
         {
-            if (rb.angularVelocity < MaximumVelocity && rb.angularVelocity > -MaximumVelocity)
-                rb.angularVelocity -= Input.GetAxis("Horizontal") * rotationSpeed;
+            if (Input.GetAxis("Horizontal") != 0)
+            {
+                if (rb.angularVelocity < MaximumVelocity && rb.angularVelocity > -MaximumVelocity)
+                    rb.angularVelocity -= Input.GetAxis("Horizontal") * rotationSpeed; 
+                if (Input.GetAxis("Horizontal") < 0 && rb.angularVelocity < 0)
+                {
+                    if (rb.angularVelocity < 2000)
+                        rb.angularVelocity += Time.deltaTime * stoppingPower * 2;
+                    else rb.angularVelocity += Time.deltaTime * stoppingPower;
+                }
+                if (Input.GetAxis("Horizontal") > 0 && rb.angularVelocity > 0)
+                {
+                    if (rb.angularVelocity > 2000)
+                        rb.angularVelocity -= Time.deltaTime * stoppingPower * 2;
+                    else rb.angularVelocity -= Time.deltaTime * stoppingPower;
+                }
+            }
+            else
+            {
+                if (Mathf.Abs(rb.velocity.x) > 0.05f)
+                    rb.velocity += new Vector2(-rb.velocity.normalized.x / 60, 0);
+                else rb.velocity = new Vector2(0, rb.velocity.y);
+            }
         }
         else
         {
@@ -52,9 +74,9 @@ public class Player_Ball_Movement_And_Dash : MonoBehaviour
         }
         if (IsCharging) { Charge(); GetComponent<CircleCollider2D>().sharedMaterial = mat[1]; } else GetComponent<CircleCollider2D>().sharedMaterial = mat[0];
         if (Mathf.Abs(rb.angularVelocity) > 2000)
-        {
             GetComponent<SpriteRenderer>().color = Color.red;
-        } else GetComponent<SpriteRenderer>().color = Color.white;
+        else
+            GetComponent<SpriteRenderer>().color = Color.white;
     }
     private void Charge()
     {

@@ -35,15 +35,21 @@ public class Player_Camera_Follow_Script : MonoBehaviour
             cam.orthographicSize += Time.deltaTime;
         if (timer > 1 && startFunction)
         {
-            vent.GetComponent<Vent_Node_Wrong_Path_Script>().StartPathChange();
+            vent.GetComponent<Vent_Node_Wrong_Path_Script>().StartPathChange(false);
             startFunction = false;
         }
     }
     public void WatchVentStructure(GameObject me)
     {
-        vent = me;
-        playerCharacter.GetComponent<Player_Ball_Movement_And_Dash>().timeStop = true;
-        followPlayer = false;
+        GameObject törnrosa = me.GetComponent<Lever_Script>().leverConnection;
+        if (me.GetComponent<Lever_Script>().noCamChange)
+            vent.GetComponent<Vent_Node_Wrong_Path_Script>().StartPathChange(true);
+        else
+        {
+            followPlayer = false;
+            vent = törnrosa;
+            playerCharacter.GetComponent<Player_Ball_Movement_And_Dash>().timeStop = true;
+        }
     }
     public void EndVentWatching()
     {

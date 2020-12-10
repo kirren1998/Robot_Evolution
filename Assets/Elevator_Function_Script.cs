@@ -23,7 +23,7 @@ public class Elevator_Function_Script : MonoBehaviour
             {
                 direction = stop - new Vector2(transform.position.x, transform.position.y);
                 rb.velocity = direction.normalized * speed;
-                if (direction.magnitude < 0.1f)
+                if (direction.magnitude < 0.05f)
                 {
                     transitioning = false;
                     rb.velocity = new Vector2(0, 0);
@@ -34,7 +34,7 @@ public class Elevator_Function_Script : MonoBehaviour
             {
                 direction = start - new Vector2(transform.position.x, transform.position.y);
                 rb.velocity = direction.normalized * speed;
-                if (direction.magnitude < 0.1f)
+                if (direction.magnitude < 0.05f)
                 {
                     transitioning = false;
                     rb.velocity = new Vector2(0, 0);

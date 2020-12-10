@@ -12,7 +12,7 @@ public class Vent_Entrance_Script : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D player)
     {
-        if (player.name != "StartNode") return;
+        if (player.name != "Player") return;
         if (Input.GetKey(KeyCode.E) && player.GetComponent<Player_Ball_Vent_Script>().currentNode == null)
         {
             Player.GetComponent<CircleCollider2D>().enabled = false;

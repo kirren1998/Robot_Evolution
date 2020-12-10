@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy_AI_Patrolling_Script : MonoBehaviour
 {
+    public float disabled;
     public bool seen;
     float awareness = 0, turnTimer = 0, randomTurnTimer = 3;
     GameObject Player;
@@ -37,6 +38,13 @@ public class Enemy_AI_Patrolling_Script : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        Debug.DrawRay(transform.position, new Vector2(0, -0.3f), Color.red);
+        if (disabled > 0)
+        {
+            seen = true; //add the confusion state for the droid if this is not true since before, making him look around in confusion about what hapend
+            disabled -= Time.deltaTime;
+            return;
+        }
         if (seen) awareness = time; else Mathf.Clamp(awareness -= Time.deltaTime,0, time);
         if (awareness > 0 && Vector2.Distance(transform.position, Player.transform.position) < range)
         {

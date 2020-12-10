@@ -11,10 +11,11 @@ public class Vent_Node_Wrong_Path_Script : MonoBehaviour
     {
         if (going) if (Input.GetKeyDown(KeyCode.E)) active = true;
     }
-    public void StartPathChange()
+    public void StartPathChange(bool bil)
     {
         leverBool = !leverBool;
         StartCoroutine(ChangePath());
+        active = bil;
     }
     private IEnumerator ChangePath()
     {

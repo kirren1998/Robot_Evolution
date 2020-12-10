@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Mech_Movement_1 : MonoBehaviour
 {
+    [Range(0, 10)] [SerializeField] float jumpHeight;
     public GameObject player;
     public bool isPiloted = false;
     Rigidbody2D rb;
@@ -45,6 +46,6 @@ public class Mech_Movement_1 : MonoBehaviour
     {
         //ad an "charge" deleay before jumping like a bending of the knees before jumping;
         if (Physics2D.Raycast(transform.position, Vector2.down, 0.4f, groundCheck))
-            rb.velocity = new Vector2(rb.velocity.x, 3);
+            rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
     }
 }

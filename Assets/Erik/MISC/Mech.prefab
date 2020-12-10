@@ -221,6 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6443dd9331f8e444a5d72e136872629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpHeight: 1.26
   player: {fileID: 0}
   isPiloted: 0
 --- !u!50 &294431244877014098

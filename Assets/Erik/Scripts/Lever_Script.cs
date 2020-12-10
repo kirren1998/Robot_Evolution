@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Lever_Script : MonoBehaviour
 {
+    public bool noCamChange;
     bool inside;
     public GameObject leverConnection;
     [SerializeField] Canvas nothin;
@@ -24,7 +25,7 @@ public class Lever_Script : MonoBehaviour
         {
             if (!cam.GetComponent<Player_Camera_Follow_Script>().followPlayer) return;
             GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
-            /*if (PlayerPrefs.GetInt("DifficultyLevel") >= 2)*/ cam.GetComponent<Player_Camera_Follow_Script>().WatchVentStructure(leverConnection);
+            /*if (PlayerPrefs.GetInt("DifficultyLevel") >= 2)*/ cam.GetComponent<Player_Camera_Follow_Script>().WatchVentStructure(gameObject);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
