@@ -350,14 +350,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dashSlow: 1000
-  MaximumVelocity: 1800
+  MaximumVelocity: 1600
   rotationSpeed: 62.2
   rb: {fileID: 5366526596722123083}
   mat:
   - {fileID: 6200000, guid: 9ad646bbe32ccd14ea2ff333ee05ab82, type: 2}
   - {fileID: 6200000, guid: 14908306dea8bdc408087b7d582c2a03, type: 2}
   chargeTimer: 0
-  chargeTime: 0.4
+  chargeTime: 0.5
   Damage: 0
   IsCharging: 0
   hasMech: 0

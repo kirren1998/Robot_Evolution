@@ -7,6 +7,7 @@ public class Mech_Movement_1 : MonoBehaviour
     public GameObject player;
     public bool isPiloted = false;
     Rigidbody2D rb;
+    LayerMask groundCheck = 1 << 8 | 1 << 9;
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
@@ -21,8 +22,10 @@ public class Mech_Movement_1 : MonoBehaviour
         if (!isPiloted) return;
         if (Input.GetMouseButtonDown(0)) StartCoroutine(Attack());
         if (Input.GetKeyDown(KeyCode.LeftAlt)) Exit();
-        rb.AddForce(new Vector2(Input.GetAxis("Horizontal") / 2, 0));
-        Mathf.Clamp(rb.velocity.x, 0, 10);
+        if (Input.GetKeyDown(KeyCode.Space)) Jump();
+        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * 1.4f, rb.velocity.y);/*
+        if (rb.velocity.x < 0) transform.localScale = new Vector2(-1, 1);
+        else transform.localScale = new Vector2(1, 1);*/
     }
     private IEnumerator Attack()
     {
@@ -37,5 +40,11 @@ public class Mech_Movement_1 : MonoBehaviour
         player.GetComponent<CircleCollider2D>().enabled = true;
         player.transform.parent = null;
         isPiloted = false;
+    }
+    private void Jump()
+    {
+        //ad an "charge" deleay before jumping like a bending of the knees before jumping;
+        if (Physics2D.Raycast(transform.position, Vector2.down, 0.4f, groundCheck))
+            rb.velocity = new Vector2(rb.velocity.x, 3);
     }
 }
