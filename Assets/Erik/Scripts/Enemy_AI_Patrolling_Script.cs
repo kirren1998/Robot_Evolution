@@ -76,7 +76,7 @@ public class Enemy_AI_Patrolling_Script : MonoBehaviour
             RaycastHit2D wall, ground;
             wall = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.right, 0.5f * -transform.parent.localScale.x, groundAndWall);
             ground = Physics2D.Raycast(new Vector2(transform.position.x + (0.3f * -transform.parent.localScale.x), transform.position.y), 
-                Vector2.down, 1 * -transform.parent.localScale.x, groundAndWall);
+                Vector2.down, 0.5f, groundAndWall);
             Debug.DrawRay(new Vector2(transform.position.x, transform.position.y), new Vector2(0.5f * -transform.parent.localScale.x, 0), Color.cyan);
             Debug.DrawRay(new Vector2(transform.position.x + (0.3f * -transform.parent.localScale.x), transform.position.y), Vector2.down, Color.red);
             if (wall)

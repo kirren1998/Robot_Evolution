@@ -13,7 +13,7 @@ public class Pause_Screen_Script : MonoBehaviour
     Player_Ball_Movement_And_Dash PBM;
     public Slider[] sliddare;
     #endregion
-    private void Awake()
+    private void Start()
     {
         PBM = GameObject.Find("Player").GetComponent<Player_Ball_Movement_And_Dash>();
         sliddare[0].value = PBM.dashSlow;
@@ -47,6 +47,9 @@ public class Pause_Screen_Script : MonoBehaviour
     public void RestartLevel()
     {
         SceneManager.LoadScene(stage);
+        pauseMenu.enabled = false;
+        settingMenu.enabled = false;
+        Time.timeScale = 1;
     }
     public void QuitGame()
     {
