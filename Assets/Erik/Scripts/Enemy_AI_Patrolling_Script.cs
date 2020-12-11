@@ -70,6 +70,7 @@ public class Enemy_AI_Patrolling_Script : MonoBehaviour
         Mathf.Clamp(turnTimer -= Time.deltaTime,0, 10);
         if (!seen)
         {
+            //The base unaware patrolling;
             GetComponentInParent<Rigidbody2D>().velocity = new Vector2(-transform.parent.localScale.x / 2, GetComponentInParent<Rigidbody2D>().velocity.y);
 
             RaycastHit2D wall, ground;
@@ -92,7 +93,6 @@ public class Enemy_AI_Patrolling_Script : MonoBehaviour
 
         }
         else GetComponentInParent<Rigidbody2D>().velocity = new Vector2(-transform.parent.localScale.x, GetComponentInParent<Rigidbody2D>().velocity.y);
-        //The base unaware patrolling;
     }
     private void Jump()
     {

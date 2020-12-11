@@ -15,7 +15,7 @@ public class Player_Ball_Movement_And_Dash : MonoBehaviour
     public int Damage = 0;
     public bool IsCharging, hasMech, inVent, timeStop, chipUpgrade;
 
-    LayerMask layer = 1 << 9;
+    LayerMask groundLayer = 1 << 9;
 
     void Update()
     {
@@ -26,7 +26,7 @@ public class Player_Ball_Movement_And_Dash : MonoBehaviour
         }
         if (hasMech || inVent) return;
         Debug.DrawRay(transform.position, new Vector2(0, -0.15f));
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.15f, layer);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.15f, groundLayer);
         if (hit)
             if (Input.GetMouseButtonDown(0) && Mathf.Abs(rb.angularVelocity) < 400)
                 { Damage = 0; chargeTimer = 0; IsCharging = true; StartCoroutine(AutoStopCharge()); }
