@@ -6,7 +6,7 @@ public class Enemy_AI_Patrolling_Script : MonoBehaviour
 {
     public float disabled;
     public bool seen;
-    float awareness = 0, turnTimer = 0, randomTurnTimer = 3;
+    float awareness = 0, turnTimer = 0, randomTurnTimer = 10;
     GameObject Player;
     public RaycastHit2D hit;
     LayerMask groundAndWall = 1 << 9 | 1 << 16, findPlayer = 1 << 9 | 1 << 8;
@@ -74,14 +74,16 @@ public class Enemy_AI_Patrolling_Script : MonoBehaviour
             GetComponentInParent<Rigidbody2D>().velocity = new Vector2(-transform.parent.localScale.x / 2, GetComponentInParent<Rigidbody2D>().velocity.y);
 
             RaycastHit2D wall, ground;
-            wall = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.right, 0.5f * -transform.parent.localScale.x, groundAndWall);
+            wall = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.right, 0.5f * -transform.parent.localScale.x, 
+                groundAndWall);
             ground = Physics2D.Raycast(new Vector2(transform.position.x + (0.3f * -transform.parent.localScale.x), transform.position.y), 
                 Vector2.down, 0.5f, groundAndWall);
             Debug.DrawRay(new Vector2(transform.position.x, transform.position.y), new Vector2(0.5f * -transform.parent.localScale.x, 0), Color.cyan);
             Debug.DrawRay(new Vector2(transform.position.x + (0.3f * -transform.parent.localScale.x), transform.position.y), Vector2.down, Color.red);
             if (wall)
             {
-                if (Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y + 0.3f), Vector2.right, 0.5f * -transform.parent.localScale.x, groundAndWall))
+                if (Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y + 0.3f), Vector2.right,
+                    0.5f * -transform.parent.localScale.x, groundAndWall))
                     TurnAround();
                 else
                     Jump();
