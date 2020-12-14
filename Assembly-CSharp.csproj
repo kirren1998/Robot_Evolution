@@ -82,115 +82,115 @@
      <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Ball_Movement_And_Dash.cs" />
      <None Include="Assets\Erik\test.txt" />
  <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Runtime">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.PixelPerfect.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Shaders">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Path.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Runtime">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Searcher.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Triangle.Runtime">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="PsdPlugin">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Psdimporter.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEngineBridge.001">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Runtime">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Runtime">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.PixelPerfect">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ShaderGraph.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Editor">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEditorBridge.001">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/GuthubStuff/Robot_Evolution/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>D:/School stuff/RBT EVO/Robot_Evolution/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
