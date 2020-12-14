@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Player_Ball_Movement_And_Dash : MonoBehaviour
 {
-    [Range(1000, 10000)] [SerializeField] int stoppingPower;
-    [Range(500, 1000)] [SerializeField] int dashSlow;
-    [Range(0, 10000)] [SerializeField] int MaximumVelocity;
-    [Range(0, 100)][SerializeField] float rotationSpeed;
+    [Range(1000, 10000)] public int stoppingPower;
+    [Range(500, 1000)] public int dashSlow;
+    [Range(0, 10000)] public int MaximumVelocity;
+    [Range(0, 100)] public float rotationSpeed;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] PhysicsMaterial2D[] mat;
     [SerializeField] float chargeTimer, chargeTime;

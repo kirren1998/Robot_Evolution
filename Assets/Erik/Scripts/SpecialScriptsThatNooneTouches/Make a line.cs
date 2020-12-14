@@ -1,6 +1,6 @@
-﻿/*using UnityEngine;
+﻿using UnityEngine;
 using UnityEditor;
-
+#if UNITY_EDITOR
 public class Makealine : EditorWindow
 {
     [MenuItem("Window/VentBuilder")]
@@ -105,4 +105,4 @@ public class Makealine : EditorWindow
             }
     }
 }
-*/
+#endif
