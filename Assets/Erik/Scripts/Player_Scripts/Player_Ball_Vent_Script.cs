@@ -6,11 +6,12 @@ public class Player_Ball_Vent_Script : MonoBehaviour
 {
     public float ballSpeed;
     Rigidbody2D rb;
-    public GameObject currentNode;
+    public GameObject currentNode, pauseScreen;
     public bool inVent = false;
 
     private void Start()
     {
+        //if (!GameObject.Find("PauseScreen")) Instantiate(pauseScreen);
         rb = GetComponent<Rigidbody2D>();
     }
     private void Update()
