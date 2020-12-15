@@ -41,32 +41,36 @@ public class Enemy_AI_Patrolling_Script : MonoBehaviour
         Debug.DrawRay(transform.position, new Vector2(0, -0.3f), Color.red);
         if (disabled > 0)
         {
-            seen = true; //add the confusion state for the droid if this is not true since before, making him look around in confusion about what hapend
+            //seen = true; //add the confusion state for the droid if this is not true since before, making him look around in confusion about what hapend
             disabled -= Time.deltaTime;
             return;
         }
         if (seen) awareness = time; else Mathf.Clamp(awareness -= Time.deltaTime,0, time);
-        if (awareness > 0 && Vector2.Distance(transform.position, Player.transform.position) < range)
+        if (Player != null)
         {
-            hit = Physics2D.Raycast(transform.position, Player.transform.position - transform.position, range, findPlayer);
-            Debug.DrawRay(transform.position, (Player.transform.position - transform.position).normalized * range);
-            if (hit)
+            if (awareness > 0 && Vector2.Distance(transform.position, Player.transform.position) < range)
             {
-                if (hit.transform.CompareTag("Player"))
+                hit = Physics2D.Raycast(transform.position, Player.transform.position - transform.position, range, findPlayer);
+                Debug.DrawRay(transform.position, (Player.transform.position - transform.position).normalized * range);
+                if (hit)
                 {
-                    seen = true;
-                    if (Player.transform.position.x - transform.position.x > 0)
-                        transform.parent.localScale = new Vector2(-1, 1);
-                    else
-                        transform.parent.localScale = new Vector2(1, 1);
+                    if (hit.transform.CompareTag("Player"))
+                    {
+                        seen = true;
+                        if (Player.transform.position.x - transform.position.x > 0)
+                            transform.parent.localScale = new Vector2(-1, 1);
+                        else
+                            transform.parent.localScale = new Vector2(1, 1);
+                    }
+                    else seen = false;
                 }
-                else seen = false;
+            }
+            else
+            {
+                seen = false;
             }
         }
-        else
-        {
-            seen = false;
-        }
+        else seen = false;
         Mathf.Clamp(turnTimer -= Time.deltaTime,0, 10);
         if (!seen)
         {
@@ -98,7 +102,8 @@ public class Enemy_AI_Patrolling_Script : MonoBehaviour
     }
     private void Jump()
     {
-        GetComponentInParent<Rigidbody2D>().velocity += new Vector2(0, 10);
+        GetComponentInParent<Rigidbody2D>().velocity += new Vector2(0, 4);
+        disabled = 0.5f;
     }
     private void TurnAround()
     {

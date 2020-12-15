@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Elevator_Button_Script : MonoBehaviour
 {
-    public bool canPress;
+    public bool canPress = false;
     public bool canGoUp, canGoDown;
     GameObject elevator;
     // Start is called before the first frame update

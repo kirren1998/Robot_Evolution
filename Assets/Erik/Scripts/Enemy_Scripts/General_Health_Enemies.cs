@@ -23,7 +23,7 @@ public class General_Health_Enemies : MonoBehaviour
         if (player.GetComponent<Rigidbody2D>().angularVelocity > 2000)
         {
             TakeDamage(player.GetComponent<Player_Ball_Movement_And_Dash>().Damage);
-            GetComponentInParent<Rigidbody2D>().velocity = new Vector2(player.attachedRigidbody.velocity.x / 2, 2);
+            GetComponentInParent<Rigidbody2D>().velocity = new Vector2(player.attachedRigidbody.velocity.x, 2);
             player.attachedRigidbody.velocity = new Vector2(-player.attachedRigidbody.velocity.normalized.x * 5, player.attachedRigidbody.velocity.y + 2);
         }
     }

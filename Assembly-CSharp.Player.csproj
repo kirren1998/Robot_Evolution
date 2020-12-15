@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\Player\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2020_1_15;UNITY_2020_1;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;UNITY_PRO_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2020_1_15;UNITY_2020_1;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -57,30 +57,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Mech_Movement.cs" />
-    <Compile Include="Assets\Erik\Scripts\Elevator_Button_Script.cs" />
-    <Compile Include="Assets\Erik\Scripts\Shit_Holder_script.cs" />
+    <Compile Include="Assets\Erik\Scripts\Misc_Scripts\Elevator_Button_Script.cs" />
+    <Compile Include="Assets\Erik\Scripts\Misc_Scripts\Shit_Holder_script.cs" />
     <Compile Include="Assets\Erik\Scripts\Vent_Scripts\Vent_Holder_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Vent_Scripts\Vent_Node_Wrong_Path_Script.cs" />
-    <Compile Include="Assets\Erik\Scripts\Elevator_Function_Script.cs" />
-    <Compile Include="Assets\Erik\Scripts\Enemy_AI_Patrolling_Script.cs" />
+    <Compile Include="Assets\Erik\Scripts\Misc_Scripts\Elevator_Function_Script.cs" />
+    <Compile Include="Assets\Erik\Scripts\Enemy_Scripts\Enemy_AI_Patrolling_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Camera_Follow_Script.cs" />
-    <Compile Include="Assets\Pause_Screen_Script.cs" />
+    <Compile Include="Assets\Erik\Scripts\Misc_Scripts\Pause_Screen_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Enter_Mech_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Vent_Scripts\InVent_Node_Movement.cs" />
     <Compile Include="Assets\Erik\Scripts\SpecialScriptsThatNooneTouches\Make a line.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Health_script.cs" />
-    <Compile Include="Assets\Erik\Scripts\Circuitboard_Pickup_Script.cs" />
+    <Compile Include="Assets\Erik\Scripts\Misc_Scripts\Circuitboard_Pickup_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Ball_Vent_Script.cs" />
-    <Compile Include="Assets\Erik\Scripts\Mech_Movement_1.cs" />
-    <Compile Include="Assets\Erik\Scripts\Mech_Attack_Melee_1.cs" />
-    <Compile Include="Assets\Erik\Scripts\Canvas_Animation_Script.cs" />
-    <Compile Include="Assets\Erik\Scripts\Darlek_Enemy_Script.cs" />
-    <Compile Include="Assets\Erik\Scripts\Lever_Script.cs" />
-    <Compile Include="Assets\Erik\Scripts\Enemy_Damage_Player_Script.cs" />
+    <Compile Include="Assets\Erik\Scripts\Mech_Scripts\Mech_Movement_1.cs" />
+    <Compile Include="Assets\Erik\Scripts\Mech_Scripts\Mech_Attack_Melee_1.cs" />
+    <Compile Include="Assets\Erik\Scripts\Misc_Scripts\Canvas_Animation_Script.cs" />
+    <Compile Include="Assets\Erik\Scripts\Enemy_Scripts\Darlek_Enemy_Script.cs" />
+    <Compile Include="Assets\Erik\Scripts\Misc_Scripts\Lever_Script.cs" />
+    <Compile Include="Assets\Erik\Scripts\Enemy_Scripts\Enemy_Damage_Player_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Face_Tracking.cs" />
     <Compile Include="Assets\Erik\Scripts\Vent_Scripts\Vent_Entrance_Script.cs" />
-    <Compile Include="Assets\Erik\Scripts\General_Health_Enemies.cs" />
+    <Compile Include="Assets\Erik\Scripts\Misc_Scripts\Instantiate_Shit.cs" />
+    <Compile Include="Assets\Mech_Health.cs" />
+    <Compile Include="Assets\Erik\Scripts\Enemy_Scripts\General_Health_Enemies.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Ball_Movement_And_Dash.cs" />
+    <Compile Include="Assets\Erik\ExperimentalStuff\WorldState.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Erik\test.txt" />

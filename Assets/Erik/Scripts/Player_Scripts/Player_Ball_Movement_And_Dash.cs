@@ -28,9 +28,9 @@ public class Player_Ball_Movement_And_Dash : MonoBehaviour
         Debug.DrawRay(transform.position, new Vector2(0, -0.15f));
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.15f, groundLayer);
         if (hit)
-            if (Input.GetMouseButtonDown(0) && Mathf.Abs(rb.angularVelocity) < 400)
+            if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.angularVelocity) < 400 || Input.GetMouseButtonDown(0) && Mathf.Abs(rb.angularVelocity) < 400)
                 { Damage = 0; chargeTimer = 0; IsCharging = true; StartCoroutine(AutoStopCharge()); }
-        if (Input.GetMouseButtonUp(0) && IsCharging) 
+        if (Input.GetMouseButtonUp(0) && IsCharging || Input.GetKeyUp(KeyCode.Space) && IsCharging) 
         { 
             IsCharging = false; 
             StopAllCoroutines();

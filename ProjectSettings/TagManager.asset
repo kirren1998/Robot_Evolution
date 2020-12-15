@@ -7,9 +7,9 @@ TagManager:
   - Mech
   - Mech_weapon
   - Enemy
-  - Vent
   - AI_VisionCones
   - Enemy_Weapon
+  - Mech_Health
   layers:
   - Default
   - TransparentFX
@@ -44,6 +44,9 @@ TagManager:
   - No_Interaction
   - 
   m_SortingLayers:
+  - name: Bunker
+    uniqueID: 2578366219
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

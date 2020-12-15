@@ -10,6 +10,8 @@ public class Player_Health_script : MonoBehaviour
     int Health = 5;
     public void TakeDamage(int Damage)
     {
+        if (GetComponent<Player_Ball_Movement_And_Dash>().hasMech == true) return;
+
         Health -= Damage;
         if (Health <= 0)
             Death();
@@ -28,6 +30,11 @@ public class Player_Health_script : MonoBehaviour
         PFT.GetComponent<Rigidbody2D>().gravityScale = 1;
         PFT.GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity;
         PFT.GetComponent<BoxCollider2D>().enabled = true;
+        if (GetComponent<Player_Enter_Mech_Script>().localMech != null)
+        {
+            GetComponent<Player_Enter_Mech_Script>().localMech.GetComponentInParent<Mech_Movement_1>().isPiloted = false;
+            GetComponent<Player_Enter_Mech_Script>().localMech = null;
+        }
         Destroy(gameObject);
     }
     private IEnumerator Damaged()
