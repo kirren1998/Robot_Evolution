@@ -1,0 +1,802 @@
+fileFormatVersion: 2
+guid: b5bd27f3e0b296b4c8de685faf5cb633
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7494346579986111884
+    second: small_droid (1)-Sheet_0
+  - first:
+      213: 4655384948306138662
+    second: small_droid (1)-Sheet_1
+  - first:
+      213: -6682001898961211328
+    second: small_droid (1)-Sheet_2
+  - first:
+      213: 6315342396169364596
+    second: small_droid (1)-Sheet_3
+  - first:
+      213: -5289725730493768420
+    second: small_droid (1)-Sheet_4
+  - first:
+      213: -1448843588523183908
+    second: small_droid (1)-Sheet_5
+  - first:
+      213: -7430463177491305145
+    second: small_droid (1)-Sheet_6
+  - first:
+      213: -2782206436049825365
+    second: small_droid (1)-Sheet_7
+  - first:
+      213: 8771464777339609770
+    second: small_droid (1)-Sheet_8
+  - first:
+      213: -6038289421399757386
+    second: small_droid (1)-Sheet_9
+  - first:
+      213: -4311274473831653196
+    second: small_droid (1)-Sheet_10
+  - first:
+      213: -4014053059758843325
+    second: small_droid (1)-Sheet_11
+  - first:
+      213: -4848403792097751727
+    second: small_droid (1)-Sheet_12
+  - first:
+      213: -1632653872714778320
+    second: small_droid (1)-Sheet_13
+  - first:
+      213: 174506170785979257
+    second: small_droid (1)-Sheet_14
+  - first:
+      213: -5647578269977008727
+    second: small_droid (1)-Sheet_15
+  - first:
+      213: 4048148406949269818
+    second: small_droid (1)-Sheet_16
+  - first:
+      213: -928595226139054930
+    second: small_droid (1)-Sheet_17
+  - first:
+      213: -3638070727507256285
+    second: small_droid (1)-Sheet_18
+  - first:
+      213: 8766822759893381820
+    second: small_droid (1)-Sheet_19
+  - first:
+      213: 4742133882802345925
+    second: small_droid (1)-Sheet_20
+  - first:
+      213: 3380759308880071057
+    second: small_droid (1)-Sheet_21
+  - first:
+      213: -4059327240963696665
+    second: small_droid (1)-Sheet_22
+  - first:
+      213: -2509936165130915869
+    second: small_droid (1)-Sheet_23
+  - first:
+      213: -6902907821012012931
+    second: small_droid (1)-Sheet_24
+  - first:
+      213: -1955859951257535915
+    second: small_droid (1)-Sheet_25
+  - first:
+      213: 4216442597658098344
+    second: small_droid (1)-Sheet_26
+  - first:
+      213: 3391549885282676987
+    second: small_droid (1)-Sheet_27
+  - first:
+      213: 1799719561146808385
+    second: small_droid (1)-Sheet_28
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472a3440e7bbef790800000000000000
+      internalID: -7494346579986111884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 160
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626dc78f1ff3b9040800000000000000
+      internalID: 4655384948306138662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 160
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0407ee7fca2c443a0800000000000000
+      internalID: -6682001898961211328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 160
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474a3aef27a94a750800000000000000
+      internalID: 6315342396169364596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 160
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ddcaa697e1796b0800000000000000
+      internalID: -5289725730493768420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 160
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd039fabe6ca4ebe0800000000000000
+      internalID: -1448843588523183908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74da20dbb11b1e890800000000000000
+      internalID: -7430463177491305145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 120
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1d177bcfd9369d0800000000000000
+      internalID: -2782206436049825365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 120
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2ad25edb08ab970800000000000000
+      internalID: 8771464777339609770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 120
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bde77273cfa33ca0800000000000000
+      internalID: -6038289421399757386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 120
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b02e0a45b64b24c0800000000000000
+      internalID: -4311274473831653196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 120
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a118f62083b48c0800000000000000
+      internalID: -4014053059758843325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d4b54607207bcb0800000000000000
+      internalID: -4848403792097751727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 80
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0397ba3f3f5a759e0800000000000000
+      internalID: -1632653872714778320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 80
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97bdfc01078fb6200800000000000000
+      internalID: 174506170785979257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 80
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a52ec05c75cf91b0800000000000000
+      internalID: -5647578269977008727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 80
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3156423789ed2830800000000000000
+      internalID: 4048148406949269818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 80
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eacabddcf87fc13f0800000000000000
+      internalID: -928595226139054930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32cde2bd2f9f28dc0800000000000000
+      internalID: -3638070727507256285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 40
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2314cf9d20aa970800000000000000
+      internalID: 8766822759893381820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 40
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c717c934a17fc140800000000000000
+      internalID: 4742133882802345925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 40
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19944ecedaedaee20800000000000000
+      internalID: 3380759308880071057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 40
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7da4fa16f5aa7c0800000000000000
+      internalID: -4059327240963696665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 40
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef27742b5aea2dd0800000000000000
+      internalID: -2509936165130915869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d703053f8e1f330a0800000000000000
+      internalID: -6902907821012012931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 0
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ab1e6acb36bd4e0800000000000000
+      internalID: -1955859951257535915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa7c31f330d38a30800000000000000
+      internalID: 4216442597658098344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 0
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf07a46c6a4311f20800000000000000
+      internalID: 3391549885282676987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_droid (1)-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1483a71d763e9f810800000000000000
+      internalID: 1799719561146808385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
