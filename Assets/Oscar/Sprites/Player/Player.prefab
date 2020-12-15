@@ -407,6 +407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballSpeed: 0
   currentNode: {fileID: 0}
+  pauseScreen: {fileID: 6830095931488033801, guid: 8e305733ffc852e4fbe73bededcee78b, type: 3}
   inVent: 0
 --- !u!1 &7774101558758573446
 GameObject:

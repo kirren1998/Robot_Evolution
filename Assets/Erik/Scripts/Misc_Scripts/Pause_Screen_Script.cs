@@ -65,5 +65,6 @@ public class Pause_Screen_Script : MonoBehaviour
         if (stage != 0) stage = 0;
         else stage = 1;
         RestartLevel();
+        PBM = GameObject.Find("Player").GetComponent<Player_Ball_Movement_And_Dash>();
     }
 }

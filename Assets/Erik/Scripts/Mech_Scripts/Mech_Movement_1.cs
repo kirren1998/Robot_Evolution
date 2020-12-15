@@ -21,11 +21,11 @@ public class Mech_Movement_1 : MonoBehaviour
     void Update()
     {
         if (!isPiloted) return;
-        if (Input.GetMouseButtonDown(0)) StartCoroutine(Attack());
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.F)) StartCoroutine(Attack());
         if (Input.GetKeyDown(KeyCode.LeftAlt)) Exit();
         if (Input.GetKeyDown(KeyCode.Space)) Jump();
-        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * 1.4f, rb.velocity.y);/*
-        if (rb.velocity.x < 0) transform.localScale = new Vector2(-1, 1);
+        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * 1.4f, rb.velocity.y);
+        /*if (rb.velocity.x < 0) transform.localScale = new Vector2(-1, 1);
         else transform.localScale = new Vector2(1, 1);*/
     }
     private IEnumerator Attack()
@@ -34,7 +34,7 @@ public class Mech_Movement_1 : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.1f);
         transform.GetChild(1).gameObject.SetActive(false);
     }
-    private void Exit()
+    public void Exit()
     {
         player.GetComponent<Player_Ball_Movement_And_Dash>().hasMech = false;
         player.GetComponent<Rigidbody2D>().gravityScale = 1;
