@@ -83,7 +83,6 @@
     <Compile Include="Assets\Mech_Health.cs" />
     <Compile Include="Assets\Erik\Scripts\Enemy_Scripts\General_Health_Enemies.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Ball_Movement_And_Dash.cs" />
-    <Compile Include="Assets\Erik\ExperimentalStuff\WorldState.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Erik\test.txt" />
