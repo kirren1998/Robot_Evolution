@@ -1,0 +1,418 @@
+fileFormatVersion: 2
+guid: e63b9708dc60ca24d82a9e464dcc395e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 551765651644476026
+    second: Mech Part For Anim_0
+  - first:
+      213: -5097963422101109881
+    second: Mech Part For Anim_1
+  - first:
+      213: -5052987726056111762
+    second: Mech Part For Anim_2
+  - first:
+      213: 7109563633675545164
+    second: Mech Part For Anim_3
+  - first:
+      213: -1926460389370174588
+    second: Mech Part For Anim_4
+  - first:
+      213: 1564599865648143241
+    second: Mech Part For Anim_5
+  - first:
+      213: 1109515785694065789
+    second: Mech Part For Anim_6
+  - first:
+      213: -9067849119809120683
+    second: Mech Part For Anim_7
+  - first:
+      213: -143336898663045476
+    second: Mech Part For Anim_8
+  - first:
+      213: 2283833276254085391
+    second: Mech Part For Anim_9
+  - first:
+      213: -3798494183485471527
+    second: Mech Part For Anim_10
+  - first:
+      213: -1114168966394029351
+    second: Mech Part For Anim_11
+  - first:
+      213: 2454464492361891442
+    second: Mech Part For Anim_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mech Part For Anim_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 90
+        width: 10
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5018571, y: 0.7507193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ae781dfe348a700800000000000000
+      internalID: 551765651644476026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech Part For Anim_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 57
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7838abb17456049b0800000000000000
+      internalID: -5097963422101109881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech Part For Anim_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 89
+        width: 10
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5083084, y: 0.7354355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61440e5f6e20e9b0800000000000000
+      internalID: -5052987726056111762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech Part For Anim_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 72
+        width: 6
+        height: 17
+      alignment: 9
+      pivot: {x: 0.4940621, y: 0.8227319}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a244de47e3aa260800000000000000
+      internalID: 7109563633675545164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech Part For Anim_4
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 72
+        width: 6
+        height: 16
+      alignment: 9
+      pivot: {x: 0.51384735, y: 0.81160593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483eab19b76d345e0800000000000000
+      internalID: -1926460389370174588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech Part For Anim_5
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 64
+        width: 8
+        height: 7
+      alignment: 9
+      pivot: {x: 0.45101392, y: 0.8918882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bd497c94396b510800000000000000
+      internalID: 1564599865648143241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech Part For Anim_6
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 64
+        width: 8
+        height: 7
+      alignment: 9
+      pivot: {x: 0.46883774, y: 0.84425026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74bbf68abac56f00800000000000000
+      internalID: 1109515785694065789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech Part For Anim_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 27
+        width: 20
+        height: 31
+      alignment: 9
+      pivot: {x: 0.36142606, y: 0.7413868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55650f0e447882280800000000000000
+      internalID: -9067849119809120683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech Part For Anim_8
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 27
+        width: 21
+        height: 29
+      alignment: 9
+      pivot: {x: 0.35755086, y: 0.7378237}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96abff99d3c20ef0800000000000000
+      internalID: -143336898663045476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech Part For Anim_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 9
+        width: 13
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5852763, y: 0.6793313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f016755b34ec1bf10800000000000000
+      internalID: 2283833276254085391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech Part For Anim_10
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 9
+        width: 13
+        height: 17
+      alignment: 9
+      pivot: {x: 0.56755126, y: 0.66349983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d406f75aa9094bc0800000000000000
+      internalID: -3798494183485471527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech Part For Anim_11
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1
+        width: 14
+        height: 7
+      alignment: 9
+      pivot: {x: 0.35152775, y: 0.8563333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dad15a6a3da980f0800000000000000
+      internalID: -1114168966394029351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mech Part For Anim_12
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1
+        width: 14
+        height: 7
+      alignment: 9
+      pivot: {x: 0.36348614, y: 0.8323805}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e3a059372001220800000000000000
+      internalID: 2454464492361891442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
