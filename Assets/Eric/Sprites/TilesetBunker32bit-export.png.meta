@@ -1,67 +1,67 @@
 fileFormatVersion: 2
-guid: e755c54022d2b73478c9a915e5068836
+guid: 990c5ba8b79d72b479d85aa4bc93401b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7881156413615024595
-    second: TilesetBunker32bit_0
+      213: 1026583866860815225
+    second: TilesetBunker32bit-export_0
   - first:
-      213: -6106321060204901126
-    second: TilesetBunker32bit_1
+      213: 1059023082529838619
+    second: TilesetBunker32bit-export_1
   - first:
-      213: 4905924826329581483
-    second: TilesetBunker32bit_2
+      213: 6080470374574564625
+    second: TilesetBunker32bit-export_2
   - first:
-      213: 2611661259656589070
-    second: TilesetBunker32bit_3
+      213: 937909525876849243
+    second: TilesetBunker32bit-export_3
   - first:
-      213: 7245501741935243348
-    second: TilesetBunker32bit_4
+      213: 5354435005362920738
+    second: TilesetBunker32bit-export_4
   - first:
-      213: -377472399003140711
-    second: TilesetBunker32bit_5
+      213: 7346882648570071445
+    second: TilesetBunker32bit-export_5
   - first:
-      213: -478524707188819678
-    second: TilesetBunker32bit_6
+      213: -4641630924647924804
+    second: TilesetBunker32bit-export_6
   - first:
-      213: 1180728161629433256
-    second: TilesetBunker32bit_7
+      213: -6042735273730046832
+    second: TilesetBunker32bit-export_7
   - first:
-      213: 4732287155630866669
-    second: TilesetBunker32bit_8
+      213: 5237549808719174049
+    second: TilesetBunker32bit-export_8
   - first:
-      213: -6652571015106766561
-    second: TilesetBunker32bit_9
+      213: 5572975107472520156
+    second: TilesetBunker32bit-export_9
   - first:
-      213: 1332708196538517884
-    second: TilesetBunker32bit_10
+      213: 8492134474535578033
+    second: TilesetBunker32bit-export_10
   - first:
-      213: -4840359793826820629
-    second: TilesetBunker32bit_11
+      213: -7438277988701680008
+    second: TilesetBunker32bit-export_11
   - first:
-      213: 9154311798398564338
-    second: TilesetBunker32bit_12
+      213: 1907732416054037667
+    second: TilesetBunker32bit-export_12
   - first:
-      213: -5450103960001977416
-    second: TilesetBunker32bit_13
+      213: -9015718680981837550
+    second: TilesetBunker32bit-export_13
   - first:
-      213: 870569392481798806
-    second: TilesetBunker32bit_14
+      213: 2664613708608103363
+    second: TilesetBunker32bit-export_14
   - first:
-      213: 6209157303367889545
-    second: TilesetBunker32bit_15
+      213: -7981666639863927759
+    second: TilesetBunker32bit-export_15
   - first:
-      213: 3639595916255632652
-    second: TilesetBunker32bit_16
+      213: -1576142896215523896
+    second: TilesetBunker32bit-export_16
   - first:
-      213: 1626951805601244128
-    second: TilesetBunker32bit_17
+      213: -1939190749681327974
+    second: TilesetBunker32bit-export_17
   - first:
-      213: 6642117796814928562
-    second: TilesetBunker32bit_18
+      213: 7131729746042127064
+    second: TilesetBunker32bit-export_18
   - first:
-      213: -4435421440659693484
-    second: TilesetBunker32bit_19
+      213: -3702302130118630644
+    second: TilesetBunker32bit-export_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -126,31 +126,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -173,7 +149,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TilesetBunker32bit_0
+      name: TilesetBunker32bit-export_0
       rect:
         serializedVersion: 2
         x: 0
@@ -187,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d9a0d4800e7f5d60800000000000000
-      internalID: 7881156413615024595
+      spriteID: 973c26c76982f3e00800000000000000
+      internalID: 1026583866860815225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_1
+      name: TilesetBunker32bit-export_1
       rect:
         serializedVersion: 2
         x: 32
@@ -208,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afc0002395df14ba0800000000000000
-      internalID: -6106321060204901126
+      spriteID: b165123f1e762be00800000000000000
+      internalID: 1059023082529838619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_2
+      name: TilesetBunker32bit-export_2
       rect:
         serializedVersion: 2
         x: 64
@@ -229,14 +205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba7052803a8551440800000000000000
-      internalID: 4905924826329581483
+      spriteID: 115adc7079b226450800000000000000
+      internalID: 6080470374574564625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_3
+      name: TilesetBunker32bit-export_3
       rect:
         serializedVersion: 2
         x: 96
@@ -250,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0fea77141c7e3420800000000000000
-      internalID: 2611661259656589070
+      spriteID: b5a38599ebf140d00800000000000000
+      internalID: 937909525876849243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_4
+      name: TilesetBunker32bit-export_4
       rect:
         serializedVersion: 2
         x: 128
@@ -271,14 +247,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 450368b22713d8460800000000000000
-      internalID: 7245501741935243348
+      spriteID: 22dd293b446ce4a40800000000000000
+      internalID: 5354435005362920738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_5
+      name: TilesetBunker32bit-export_5
       rect:
         serializedVersion: 2
         x: 0
@@ -292,14 +268,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99d37e06ad2f2caf0800000000000000
-      internalID: -377472399003140711
+      spriteID: 599008ae7de55f560800000000000000
+      internalID: 7346882648570071445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_6
+      name: TilesetBunker32bit-export_6
       rect:
         serializedVersion: 2
         x: 32
@@ -313,14 +289,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22933cb6050fb59f0800000000000000
-      internalID: -478524707188819678
+      spriteID: cbb74e5344d959fb0800000000000000
+      internalID: -4641630924647924804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_7
+      name: TilesetBunker32bit-export_7
       rect:
         serializedVersion: 2
         x: 64
@@ -334,14 +310,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ade83ad10ac26010800000000000000
-      internalID: 1180728161629433256
+      spriteID: 0940999c844e32ca0800000000000000
+      internalID: -6042735273730046832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_8
+      name: TilesetBunker32bit-export_8
       rect:
         serializedVersion: 2
         x: 96
@@ -355,14 +331,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de0858668167ca140800000000000000
-      internalID: 4732287155630866669
+      spriteID: 1a91f122dc38fa840800000000000000
+      internalID: 5237549808719174049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_9
+      name: TilesetBunker32bit-export_9
       rect:
         serializedVersion: 2
         x: 0
@@ -376,14 +352,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f19508998e15da3a0800000000000000
-      internalID: -6652571015106766561
+      spriteID: cd37ef6555f275d40800000000000000
+      internalID: 5572975107472520156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_10
+      name: TilesetBunker32bit-export_10
       rect:
         serializedVersion: 2
         x: 32
@@ -397,14 +373,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c790ee33b0bbe7210800000000000000
-      internalID: 1332708196538517884
+      spriteID: 1b9aa83bf4f1ad570800000000000000
+      internalID: 8492134474535578033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_11
+      name: TilesetBunker32bit-export_11
       rect:
         serializedVersion: 2
         x: 64
@@ -418,14 +394,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bed8edfa96693dcb0800000000000000
-      internalID: -4840359793826820629
+      spriteID: 87e44d6349de5c890800000000000000
+      internalID: -7438277988701680008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_12
+      name: TilesetBunker32bit-export_12
       rect:
         serializedVersion: 2
         x: 96
@@ -439,14 +415,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f7b6ba3416aa0f70800000000000000
-      internalID: 9154311798398564338
+      spriteID: 3ac06695680a97a10800000000000000
+      internalID: 1907732416054037667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_13
+      name: TilesetBunker32bit-export_13
       rect:
         serializedVersion: 2
         x: 128
@@ -460,14 +436,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b3e12303575d54b0800000000000000
-      internalID: -5450103960001977416
+      spriteID: 219693180abb1e280800000000000000
+      internalID: -9015718680981837550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_14
+      name: TilesetBunker32bit-export_14
       rect:
         serializedVersion: 2
         x: 160
@@ -481,14 +457,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69a843fff32e41c00800000000000000
-      internalID: 870569392481798806
+      spriteID: 3c3e83ddc0c9af420800000000000000
+      internalID: 2664613708608103363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_15
+      name: TilesetBunker32bit-export_15
       rect:
         serializedVersion: 2
         x: 192
@@ -502,14 +478,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 982f3cd7bab5b2650800000000000000
-      internalID: 6209157303367889545
+      spriteID: 13c235fca7c6b3190800000000000000
+      internalID: -7981666639863927759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_16
+      name: TilesetBunker32bit-export_16
       rect:
         serializedVersion: 2
         x: 32
@@ -523,14 +499,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0d1162d331728230800000000000000
-      internalID: 3639595916255632652
+      spriteID: 8cd71dbf26a602ae0800000000000000
+      internalID: -1576142896215523896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_17
+      name: TilesetBunker32bit-export_17
       rect:
         serializedVersion: 2
         x: 64
@@ -544,14 +520,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e3ea871c08149610800000000000000
-      internalID: 1626951805601244128
+      spriteID: a906585994c9615e0800000000000000
+      internalID: -1939190749681327974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_18
+      name: TilesetBunker32bit-export_18
       rect:
         serializedVersion: 2
         x: 32
@@ -565,14 +541,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ba347bd1fa8d2c50800000000000000
-      internalID: 6642117796814928562
+      spriteID: 8d28de22b6ef8f260800000000000000
+      internalID: 7131729746042127064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetBunker32bit_19
+      name: TilesetBunker32bit-export_19
       rect:
         serializedVersion: 2
         x: 64
@@ -586,8 +562,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 450e35813b73272c0800000000000000
-      internalID: -4435421440659693484
+      spriteID: c036b1b04d7ce9cc0800000000000000
+      internalID: -3702302130118630644
       vertices: []
       indices: 
       edges: []
