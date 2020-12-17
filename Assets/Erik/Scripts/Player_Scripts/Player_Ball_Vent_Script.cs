@@ -29,6 +29,8 @@ public class Player_Ball_Vent_Script : MonoBehaviour
                 else currentNode = currentNode.transform.GetChild(0).gameObject;
             } else
             {
+                GetComponent<SpriteRenderer>().enabled = true;
+                transform.GetChild(2).GetComponent<SpriteRenderer>().enabled = true;
                 GetComponent<Rigidbody2D>().gravityScale = 1;
                 inVent = false;
                 GetComponent<Player_Ball_Movement_And_Dash>().inVent = false;

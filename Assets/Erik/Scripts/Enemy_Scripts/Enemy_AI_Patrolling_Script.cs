@@ -6,7 +6,7 @@ public class Enemy_AI_Patrolling_Script : MonoBehaviour
 {
     public float disabled;
     public bool seen;
-    float awareness = 0, turnTimer = 0, randomTurnTimer = 10;
+    public float awareness = 0, turnTimer = 0, randomTurnTimer = 10;
     GameObject Player;
     public RaycastHit2D hit;
     LayerMask groundAndWall = 1 << 9 | 1 << 16, findPlayer = 1 << 9 | 1 << 8;
