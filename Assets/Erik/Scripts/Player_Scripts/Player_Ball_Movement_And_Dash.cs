@@ -73,10 +73,6 @@ public class Player_Ball_Movement_And_Dash : MonoBehaviour
                 rb.angularVelocity -= Input.GetAxis("Horizontal") * rotationSpeed * 2;
         }
         if (IsCharging) { Charge(); GetComponent<CircleCollider2D>().sharedMaterial = mat[1]; } else GetComponent<CircleCollider2D>().sharedMaterial = mat[0];
-        if (Mathf.Abs(rb.angularVelocity) > 2000)
-            GetComponent<SpriteRenderer>().color = Color.red;
-        else
-            GetComponent<SpriteRenderer>().color = Color.white;
     }
     private void Charge()
     {
