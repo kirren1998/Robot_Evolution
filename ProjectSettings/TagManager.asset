@@ -10,6 +10,7 @@ TagManager:
   - AI_VisionCones
   - Enemy_Weapon
   - Mech_Health
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - Enemy_Weapon
   - Interactables
   - Bounds_For_AI
-  - 
+  - Boss_Standable_Parts
   - 
   - 
   - 
