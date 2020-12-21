@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player_Camera_Follow_Script : MonoBehaviour
 {
     #region Variables
-    public bool followPlayer = true, startFunction = true;
+    public bool followPlayer = true, startFunction = false;
     GameObject playerCharacter, vent;
     Rigidbody2D rb;
     Camera cam;
@@ -49,6 +49,7 @@ public class Player_Camera_Follow_Script : MonoBehaviour
             followPlayer = false;
             vent = törnrosa;
             playerCharacter.GetComponent<Player_Ball_Movement_And_Dash>().timeStop = true;
+            startFunction = true;
         }
     }
     public void EndVentWatching()
@@ -56,6 +57,10 @@ public class Player_Camera_Follow_Script : MonoBehaviour
         followPlayer = true;
         playerCharacter.GetComponent<Player_Ball_Movement_And_Dash>().timeStop = false;
         timer = 0;
-        startFunction = true;
+    }
+    public void BossFight(GameObject törnrosa)
+    {
+        followPlayer = false;
+        vent = törnrosa;
     }
 }

@@ -21,7 +21,7 @@ public class Player_Health_script : MonoBehaviour
     {
         transform.GetChild(0).GetComponent<Player_Camera_Follow_Script>().GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
         transform.GetChild(0).GetComponent<Player_Camera_Follow_Script>().enabled = false;
-        if (GameObject.Find("Player_Canvas")) GameObject.Find("Player_Canvas").GetComponent<Canvas_Animation_Script>().GameOver();
+        if (GameObject.Find("PauseScreen")) GameObject.Find("PauseScreen").GetComponent<Pause_Screen_Script>().GameOver();
         transform.GetChild(0).transform.parent = null;
         GameObject men = Instantiate(Chrapnell, transform.position, Quaternion.identity);
         for (int i = 0; i < men.transform.childCount; i++)
@@ -35,7 +35,11 @@ public class Player_Health_script : MonoBehaviour
             GetComponent<Player_Enter_Mech_Script>().localMech.GetComponentInParent<Mech_Movement_1>().isPiloted = false;
             GetComponent<Player_Enter_Mech_Script>().localMech = null;
         }
-        Destroy(gameObject);
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponentInChildren<SpriteRenderer>().enabled = false;
+        GetComponent<BoxCollider2D>().enabled = false;
+        GetComponent<CircleCollider2D>().enabled = false;
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
     }
     private IEnumerator Damaged()
     {
