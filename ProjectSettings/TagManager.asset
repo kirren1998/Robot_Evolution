@@ -11,6 +11,7 @@ TagManager:
   - Enemy_Weapon
   - Mech_Health
   - Ground
+  - Vent
   layers:
   - Default
   - TransparentFX
@@ -30,7 +31,7 @@ TagManager:
   - Interactables
   - Bounds_For_AI
   - Boss_Standable_Parts
-  - 
+  - Background
   - 
   - 
   - 
@@ -45,6 +46,9 @@ TagManager:
   - No_Interaction
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1076682123
+    locked: 0
   - name: Bunker
     uniqueID: 2578366219
     locked: 0
