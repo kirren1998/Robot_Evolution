@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shit_Holder_script : MonoBehaviour
 {
     public GameObject[] Shit;
+    public Sprite[] Vents;
     /*[System.Serializable]
     public class EvenMoreShit
     {
