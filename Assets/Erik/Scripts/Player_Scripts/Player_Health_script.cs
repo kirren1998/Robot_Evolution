@@ -7,14 +7,31 @@ public class Player_Health_script : MonoBehaviour
     [SerializeField] GameObject PFT;
     [SerializeField] GameObject Chrapnell;
     public bool canTakeDamage = true;
-    int Health = 5;
+    int Health = 4;
+    public Sprite[] mood;
+    public Sprite angery;
+
+    public void Start()
+    {
+        PFT.GetComponent<SpriteRenderer>().sprite = mood[Health - 1];
+    }
+    public void FixedUpdate()
+    {
+        if (Mathf.Abs(GetComponent<Rigidbody2D>().angularVelocity) > 2000)
+            PFT.GetComponent<SpriteRenderer>().sprite = angery;
+        else 
+            PFT.GetComponent<SpriteRenderer>().sprite = mood[Health-1];
+    }
     public void TakeDamage(int Damage)
     {
         if (GetComponent<Player_Ball_Movement_And_Dash>().hasMech == true) return;
 
         Health -= Damage;
         if (Health <= 0)
+        {
             Death();
+            return;
+        }
         StartCoroutine(Damaged());
     }
     public void Death()
