@@ -79,7 +79,7 @@ public class Boss_Arm_Follow_Player_Script : MonoBehaviour
             pauseForEffect = true;
             bossMain.GetComponent<Boss_Main_Script>().BustAMoveCraig(gameObject);
         }
-        else if (collision.tag == "Player")
+        else if (collision.tag == "Player" && collision.isTrigger)
         {
             collision.GetComponent<Player_Health_script>().TakeDamage(1);
         }

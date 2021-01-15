@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Canvas_Animation_Script : MonoBehaviour
 {
     [SerializeField] Text gameOver;
-    [SerializeField] GameObject restart;
+    [SerializeField] GameObject restart, quit;
     public void GameOver()
     {
         gameOver.CrossFadeAlpha(255, 10, true);
@@ -14,12 +14,9 @@ public class Canvas_Animation_Script : MonoBehaviour
     }
     private IEnumerator Emu()
     {
-        yield return new WaitForSecondsRealtime(2);
-        restart.GetComponent<Button>().enabled = true;
+        yield return new WaitForSecondsRealtime(1);
         restart.GetComponent<Text>().CrossFadeAlpha(255, 2, true);
-    }
-    public void ReStart()
-    {
-        Application.Quit();
+        yield return new WaitForSecondsRealtime(1);
+        quit.GetComponent<Text>().CrossFadeAlpha(255, 2, true);
     }
 }
