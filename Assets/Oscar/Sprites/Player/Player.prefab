@@ -395,6 +395,12 @@ MonoBehaviour:
   PFT: {fileID: 7774101558758573446}
   Chrapnell: {fileID: 7763108656467619733, guid: e5d11642b6fba11468bb4230f989c2f6, type: 3}
   canTakeDamage: 1
+  mood:
+  - {fileID: 21300000, guid: 321bc28c31f3967408a061c8e9c382f9, type: 3}
+  - {fileID: 21300000, guid: bb172748c7f5eda4bb552c69914043a3, type: 3}
+  - {fileID: 21300000, guid: 689fafcc8855fd647a39baa7b226cc75, type: 3}
+  - {fileID: 21300000, guid: 16600cf826eaaea4794ec854914b552f, type: 3}
+  angery: {fileID: 21300000, guid: c59f6991cc5b6ba4aa568af4a3459b14, type: 3}
 --- !u!114 &536848600
 MonoBehaviour:
   m_ObjectHideFlags: 0
