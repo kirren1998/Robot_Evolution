@@ -70,6 +70,7 @@
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Enter_Mech_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Vent_Scripts\InVent_Node_Movement.cs" />
     <Compile Include="Assets\Erik\Scripts\SpecialScriptsThatNooneTouches\Make a line.cs" />
+    <Compile Include="Assets\LOOK_AT_ME.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Health_script.cs" />
     <Compile Include="Assets\Erik\Scripts\Misc_Scripts\Circuitboard_Pickup_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Ball_Vent_Script.cs" />
@@ -87,7 +88,7 @@
     <Compile Include="Assets\Erik\Scripts\Mech_Scripts\Mech_Health.cs" />
     <Compile Include="Assets\Erik\Scripts\Enemy_Scripts\General_Health_Enemies.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Ball_Movement_And_Dash.cs" />
-    <Compile Include="Assets\LOOK_AT_ME.cs" />
+    <Compile Include="Assets\platformAntiSpin.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Erik\test.txt" />

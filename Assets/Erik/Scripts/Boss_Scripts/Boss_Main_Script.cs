@@ -6,7 +6,7 @@ public class Boss_Main_Script : MonoBehaviour
 {
     GameObject player, rightArm, leftArm, activeArm;
     //float activationTimer;
-    bool paused;
+    public bool paused;
     public int bossHealth = 10, bossStatus = 1, gettingTired;
 
 
@@ -80,24 +80,24 @@ public class Boss_Main_Script : MonoBehaviour
             }
         } 
     }
-    public void BustAMoveCraig()
+    public void BustAMoveCraig(GameObject blade)
     {
         gettingTired++;
         if (gettingTired >= bossStatus + 1)
         {
             gettingTired = 0;
-            StartCoroutine(waitingForDamage());
+            StartCoroutine(waitingForDamage(blade));
         }
         else activeArm.GetComponent<Boss_Arm_Follow_Player_Script>().DoneWaiting();
     }
-    IEnumerator waitingForDamage()
+    IEnumerator waitingForDamage(GameObject blade)
     {
         paused = true;
         GetComponent<BoxCollider2D>().enabled = true;
-        yield return new WaitForSecondsRealtime(4 - bossStatus);
+        blade.GetComponent<CircleCollider2D>().enabled = false;
+        blade.GetComponent<Boss_Arm_Follow_Player_Script>().platform.SetActive(true);
+        yield return new WaitForSecondsRealtime(2);
         activeArm.GetComponent<Boss_Arm_Follow_Player_Script>().DoneWaiting();
-        GetComponent<BoxCollider2D>().enabled = false;
-        paused = false;
     }
     private void StatusChange()
     {
@@ -105,7 +105,7 @@ public class Boss_Main_Script : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && collision.isTrigger)
         {
             if (Mathf.Abs(collision.attachedRigidbody.angularVelocity) > 2000)
             {

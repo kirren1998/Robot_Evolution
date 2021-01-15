@@ -8,6 +8,7 @@ public class Boss_Arm_Follow_Player_Script : MonoBehaviour
     public bool pauseForEffect, goindDown, resetting, attackPlayer;
     Rigidbody2D rb;
     GameObject player, bossMain;
+    public GameObject platform;
     Vector3 startingPos;
 
     private void Start()
@@ -17,6 +18,8 @@ public class Boss_Arm_Follow_Player_Script : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.Find("Player");
         rb.angularVelocity = -1000;
+        platform = transform.parent.GetChild(1).gameObject;
+        platform.SetActive(false);
     }
     private void FixedUpdate()
     {
@@ -29,12 +32,22 @@ public class Boss_Arm_Follow_Player_Script : MonoBehaviour
         }
         if (resetting)
         {
-            Vector2 dir = startingPos - transform.position;
-            rb.velocity = new Vector2(0, dir.normalized.y * bossMain.GetComponent<Boss_Main_Script>().bossStatus);
-            if (transform.position.y > startingPos.y - 0.4f)
+            if (pauseForEffect)
             {
-                resetting = false;
+                Vector2 dir = startingPos - transform.position;
+                rb.velocity = new Vector2(0, dir.normalized.y * bossMain.GetComponent<Boss_Main_Script>().bossStatus);
+                pauseForEffect = !pauseForEffect;
+            }
+            if (transform.position.y > startingPos.y - 0.1f)
+            {
                 rb.velocity = Vector2.zero;
+            }
+            if (player.transform.position.y + 1 < transform.position.y && transform.position.y > startingPos.y - 0.1f)
+            {
+                bossMain.GetComponent<Boss_Main_Script>().paused = false;
+                resetting = false;
+                GetComponent<CircleCollider2D>().enabled = true;
+                platform.SetActive(false);
             }
             return;
         }
@@ -54,8 +67,6 @@ public class Boss_Arm_Follow_Player_Script : MonoBehaviour
     }
     public void DoneWaiting()
     {
-        //yield return new WaitForSecondsRealtime(5 - GetComponentInParent<Boss_Main_Script>().bossStatus);
-        pauseForEffect = false;
         resetting = true;
         goindDown = false;
     }
@@ -66,7 +77,7 @@ public class Boss_Arm_Follow_Player_Script : MonoBehaviour
             rb.velocity = Vector2.zero;
             goindDown = false;
             pauseForEffect = true;
-            bossMain.GetComponent<Boss_Main_Script>().BustAMoveCraig();
+            bossMain.GetComponent<Boss_Main_Script>().BustAMoveCraig(gameObject);
         }
         else if (collision.tag == "Player")
         {

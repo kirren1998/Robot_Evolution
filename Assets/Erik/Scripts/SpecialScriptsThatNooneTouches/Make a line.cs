@@ -40,7 +40,7 @@ public class Makealine : EditorWindow
             if (Selection.gameObjects[0].name != "StartNode") { Debug.LogError("The selected GameObject is not a StartNode!"); return; }
             GameObject ventEntrance = Selection.gameObjects[0].transform.parent.gameObject;
             GameObject ventPath = shit.GetComponent<Shit_Holder_script>().Shit[0], lever = shit.GetComponent<Shit_Holder_script>().Shit[1];
-            ventEntrance.GetComponent<SpriteRenderer>().sprite = shit.GetComponent<Shit_Holder_script>().Vents[0];
+            ventEntrance.GetComponentInChildren<SpriteRenderer>().sprite = shit.GetComponent<Shit_Holder_script>().Vents[0];
             float dist = 0.25f;
             int iterations = 2;
             for (int me = 0; me < iterations; me++)
@@ -51,7 +51,7 @@ public class Makealine : EditorWindow
                     GameObject start, end;
                     start = ventEntrance.transform.GetChild(i - 1).gameObject;
                     end = ventEntrance.transform.GetChild(i).gameObject;
-                    end.GetComponent<SpriteRenderer>().sprite = shit.GetComponent<Shit_Holder_script>().Vents[Random.Range(1, 4)];
+                    end.GetComponent<SpriteRenderer>().sprite = shit.GetComponent<Shit_Holder_script>().Vents[0];
                     float distance = Vector3.Distance(start.transform.position, end.transform.position);
                     int ventCount = Mathf.RoundToInt(distance / dist);
                     Vector3 direction = (end.transform.position - start.transform.position);
