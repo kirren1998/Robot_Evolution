@@ -13,11 +13,10 @@ public class Darlek_Enemy_Script : MonoBehaviour
     {
         player = GameObject.Find("Player");
         torch = transform.GetChild(0).GetChild(0).GetComponent<Light2D>();
-        attack = transform.GetChild(1).GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (GetComponentInChildren<Enemy_AI_Patrolling_Script>().seen)
         {
@@ -28,11 +27,9 @@ public class Darlek_Enemy_Script : MonoBehaviour
             if (torch.pointLightOuterAngle > torch.pointLightInnerAngle + 1) torch.pointLightOuterAngle -= Time.deltaTime * 100;
             torch.color = new Color(1, Mathf.Clamp(torch.color.g - Time.deltaTime, 0, 1), 0);
             if (torch.pointLightOuterRadius < 3) torch.pointLightOuterRadius += Time.deltaTime;
-            attack.enabled = true;
         }
         else
         {
-            attack.enabled = false;
             if (torch.pointLightOuterRadius > 1.5f) torch.pointLightOuterRadius -= Time.deltaTime;
             torch.transform.rotation = Quaternion.Euler(0, 0, - 90 * -transform.localScale.x);
             if (torch.pointLightInnerAngle < 25) torch.pointLightInnerAngle += Time.deltaTime * 50;

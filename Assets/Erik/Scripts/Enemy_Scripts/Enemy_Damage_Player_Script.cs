@@ -4,7 +4,16 @@ using UnityEngine;
 
 public class Enemy_Damage_Player_Script : MonoBehaviour
 {
+    GameObject player;
     [Range(1, 5)] [SerializeField] int damage = 1;
+    Quaternion startRot;
+    BoxCollider2D attackSquare;
+    private void Start()
+    {
+        player = GameObject.Find("Player");
+        startRot = Quaternion.identity;
+        attackSquare = GetComponent<BoxCollider2D>();
+    }
     private void OnTriggerStay2D(Collider2D player)
     {
         if (player.CompareTag("Player") && player.isTrigger)
@@ -18,5 +27,18 @@ public class Enemy_Damage_Player_Script : MonoBehaviour
         {
             player.GetComponent<Mech_Health>().TakeDamage(damage);
         }
+    }
+    public void Attack()
+    {
+        Vector3 dir = transform.position - player.transform.position;
+        Quaternion shit = Quaternion.LookRotation(dir);
+        transform.rotation = Quaternion.Euler(0, 0, (shit.eulerAngles.x) * -transform.parent.transform.localScale.x);
+        attackSquare.enabled = true;
+        Invoke("ResetAttack", 0.5f);
+    }
+    private void ResetAttack()
+    {
+        attackSquare.enabled = false;
+        transform.rotation = startRot;
     }
 }

@@ -17,6 +17,7 @@ public class Player_Health_script : MonoBehaviour
     }
     public void FixedUpdate()
     {
+        if (Health < 1) return;
         if (Mathf.Abs(GetComponent<Rigidbody2D>().angularVelocity) > 2000)
             PFT.GetComponent<SpriteRenderer>().sprite = angery;
         else 
