@@ -20,7 +20,7 @@ public class General_Health_Enemies : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D player)
     {
         if (!player.CompareTag("Player") || player.isTrigger) return;
-        if (Mathf.Abs(player.GetComponent<Rigidbody2D>().angularVelocity) > 2000)
+        if (player.GetComponent<Rigidbody2D>().angularVelocity > 2000)
         {
             TakeDamage(player.GetComponent<Player_Ball_Movement_And_Dash>().Damage);
             GetComponentInParent<Rigidbody2D>().velocity = new Vector2(player.attachedRigidbody.velocity.x, 2);

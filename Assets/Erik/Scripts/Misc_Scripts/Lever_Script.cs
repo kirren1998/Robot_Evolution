@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Lever_Script : MonoBehaviour
 {
     public bool noCamChange;
-    bool inside = false;
+    bool inside;
     public GameObject leverConnection;
     [SerializeField] Canvas nothin;
     Text textPopup;
