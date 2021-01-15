@@ -14,9 +14,9 @@ public class Parallax : MonoBehaviour
     void Start()
     {
         startpos = transform.position.x;
-        length = GetComponent<SpriteRenderer>().bounds.size.x * 6;
-        length -= antiArtifact;
-        //Snopp();
+        length = GetComponent<SpriteRenderer>().bounds.size.x * 5.99f;
+        //length -= antiArtifact;
+        
     }
 
     // Update is called once per frame
@@ -26,8 +26,8 @@ public class Parallax : MonoBehaviour
         float dist = (cam.transform.position.x * parallaxEffect);
         transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z);
 
-        if (temp > startpos + length) startpos += length * 1.5f;
-        else if (temp < startpos - length) startpos -= length * 1.5f;
-        //Invoke("Snopp", 0.4f);
+        if (temp > startpos + length) startpos += (length * 1.5f);
+        else if (temp < startpos - length) startpos -= (length * 1.5f);
+        
     }
 }

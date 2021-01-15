@@ -8,7 +8,6 @@ public class Mech_Health : MonoBehaviour
 
     public void TakeDamage(int Damage)
     {
-        Debug.Log("Shjt");
         health -= Damage;
         if (health <= 0)
         {

@@ -47,6 +47,8 @@ MonoBehaviour:
   Shit:
   - {fileID: 1145171583732141513, guid: edf7f037767b8cb469d8feda50e9e4e9, type: 3}
   - {fileID: 2402054600605324628, guid: ffbd014fd02804244b0e103e3224b311, type: 3}
+  Vents:
+  - {fileID: 21300000, guid: a0e16c9a7d3b0d545b8ab3a78ddef9bf, type: 3}
 --- !u!1 &6213990257786533088
 GameObject:
   m_ObjectHideFlags: 0

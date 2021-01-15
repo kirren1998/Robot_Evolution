@@ -6,8 +6,8 @@ public class Enemy_AI_Patrolling_Script : MonoBehaviour
 {
     public float disabled;
     public bool seen;
-    float awareness = 0, turnTimer = 0, randomTurnTimer = 10;
-    GameObject Player;
+    public float awareness = 0, turnTimer = 0, randomTurnTimer = 10;
+    GameObject Player, wheel;
     public RaycastHit2D hit;
     LayerMask groundAndWall = 1 << 9 | 1 << 16, findPlayer = 1 << 9 | 1 << 8;
     [Range(0, 10)] [SerializeField] float range, time;
@@ -31,6 +31,7 @@ public class Enemy_AI_Patrolling_Script : MonoBehaviour
     private void Start()
     {
         Player = GameObject.Find("Player");
+        wheel = transform.parent.GetChild(3).gameObject;
     }
     private void OnTriggerEnter2D(Collider2D player)
     {
@@ -50,6 +51,11 @@ public class Enemy_AI_Patrolling_Script : MonoBehaviour
         {
             if (awareness > 0 && Vector2.Distance(transform.position, Player.transform.position) < range)
             {
+                if (Vector2.Distance(transform.position, Player.transform.position) < .75f && seen)
+                {
+                    transform.parent.GetComponentInChildren<Animator>().SetTrigger("attack");
+                    disabled = 3;
+                } 
                 hit = Physics2D.Raycast(transform.position, Player.transform.position - transform.position, range, findPlayer);
                 Debug.DrawRay(transform.position, (Player.transform.position - transform.position).normalized * range);
                 if (hit)
@@ -76,7 +82,7 @@ public class Enemy_AI_Patrolling_Script : MonoBehaviour
         {
             //The base unaware patrolling;
             GetComponentInParent<Rigidbody2D>().velocity = new Vector2(-transform.parent.localScale.x / 2, GetComponentInParent<Rigidbody2D>().velocity.y);
-
+            wheel.transform.rotation = Quaternion.Euler(0, 0, wheel.transform.rotation.z + 4);
             RaycastHit2D wall, ground;
             wall = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.right, 0.5f * -transform.parent.localScale.x, 
                 groundAndWall);
@@ -96,7 +102,6 @@ public class Enemy_AI_Patrolling_Script : MonoBehaviour
                 TurnAround();
             randomTurnTimer -= Time.deltaTime;
             if (randomTurnTimer <= 0 && turnTimer <= 0) TurnAround();
-
         }
         else GetComponentInParent<Rigidbody2D>().velocity = new Vector2(-transform.parent.localScale.x, GetComponentInParent<Rigidbody2D>().velocity.y);
     }
