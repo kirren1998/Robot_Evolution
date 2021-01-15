@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenuButtons : MonoBehaviour
 {
-
+    
     public void PlayButtonPress()
     {
         GameObject.Find("Global light").GetComponent<LightFade>().fadingPlay = true;
@@ -14,6 +15,7 @@ public class MainMenuButtons : MonoBehaviour
     public void LoadNextScene()
     {
         SceneManager.LoadScene(1);
+
     }
 
     public void QuitButtonPress()
