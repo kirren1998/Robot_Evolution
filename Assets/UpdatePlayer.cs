@@ -10,6 +10,7 @@ public class UpdatePlayer : MonoBehaviour
     {
         txt = transform.GetChild(0).GetComponent<Text>();
         txt.enabled = false;
+        GetComponent<Canvas>().worldCamera = Camera.main;
     }
 
     public void DoTheThing()

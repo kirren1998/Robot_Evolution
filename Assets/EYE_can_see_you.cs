@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class EYE_can_see_you : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] GameObject[] eyeParts;
+    GameObject player;
+    public bool focus;
+    [SerializeField] [Range(0, 0.05f)] float[] distance;
+    private void Start()
     {
-        
+        player = GameObject.Find("Player");
     }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        if (focus)
+        {
+            Vector2 direction = transform.position - player.transform.position;
+            float dis;
+            Mathf.Clamp(dis = Vector2.Distance(transform.position, player.transform.position), 0, 4);
+            eyeParts[0].transform.localPosition = new Vector2((-distance[0] * direction.normalized.x) * dis / 4, (-distance[0] * direction.normalized.y) * dis / 4);
+            for (int i = 1; i < eyeParts.Length; i++)
+            {
+                eyeParts[i].transform.position = new Vector2(eyeParts[i - 1].transform.position.x + ((-distance[i] * direction.normalized.x) * dis / 4), eyeParts[i - 1].transform.position.y + ((-distance[i] * direction.normalized.y) * dis / 4));
+            }
+        }
     }
 }

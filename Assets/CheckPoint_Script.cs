@@ -6,6 +6,7 @@ public class CheckPoint_Script : MonoBehaviour
 {
     Canvas checkpointReached;
     bool checkpointTouched;
+    [SerializeField] bool shouldIHaveTheUpgradeByNow = false;
 
 
 
@@ -15,7 +16,7 @@ public class CheckPoint_Script : MonoBehaviour
         {
             PlayerPrefs.SetFloat("xspawnpos", transform.position.x);
             PlayerPrefs.SetFloat("yspawnpos", transform.position.y);
-            //checkpointReached.GetComponent<UpdatePlayer>().DoTheThing();
+            checkpointReached.GetComponent<UpdatePlayer>().DoTheThing();
         }
     }
 }

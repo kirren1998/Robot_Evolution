@@ -88,7 +88,6 @@
     <Compile Include="Assets\Erik\Scripts\Misc_Scripts\Lever_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Enemy_Scripts\Enemy_Damage_Player_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Boss_Scripts\Boss_Arm_Follow_Player_Script.cs" />
-    <Compile Include="Assets\Erik\ExperimentalStuff\WorldState.cs" />
     <Compile Include="Assets\Erik\Scripts\Boss_Scripts\Trigger_Boss_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Mech_Scripts\Mech_Health.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Face_Tracking.cs" />
@@ -99,6 +98,7 @@
     <Compile Include="Assets\Erik\Scripts\Enemy_Scripts\General_Health_Enemies.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Ball_Movement_And_Dash.cs" />
     <Compile Include="Assets\EYE_can_see_you.cs" />
+    <Compile Include="Assets\Arm_follow_player.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Erik\test.txt" />

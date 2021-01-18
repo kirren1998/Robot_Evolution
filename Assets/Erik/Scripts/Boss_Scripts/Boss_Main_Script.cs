@@ -94,7 +94,7 @@ public class Boss_Main_Script : MonoBehaviour
     {
         paused = true;
         GetComponent<BoxCollider2D>().enabled = true;
-        blade.GetComponent<CircleCollider2D>().enabled = false;
+        blade.GetComponent<BoxCollider2D>().enabled = false;
         blade.GetComponent<Boss_Arm_Follow_Player_Script>().platform.SetActive(true);
         yield return new WaitForSecondsRealtime(2);
         activeArm.GetComponent<Boss_Arm_Follow_Player_Script>().DoneWaiting();

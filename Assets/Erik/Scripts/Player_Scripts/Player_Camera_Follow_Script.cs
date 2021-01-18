@@ -31,7 +31,7 @@ public class Player_Camera_Follow_Script : MonoBehaviour
         }
         rb.velocity = new Vector3((vent.transform.position.x - transform.position.x) * 2, (vent.transform.position.y - transform.position.y) * 2, -10);
         timer += Time.deltaTime;
-        if (cam.orthographicSize < 3)
+        if (cam.orthographicSize < 2.1f)
             cam.orthographicSize += Time.deltaTime;
         if (timer > 1 && startFunction)
         {
