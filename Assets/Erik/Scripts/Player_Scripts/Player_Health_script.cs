@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player_Health_script : MonoBehaviour
 {
-    [SerializeField] GameObject PFT;
+    public GameObject PFT;
     [SerializeField] GameObject Chrapnell;
     public bool canTakeDamage = true;
     int Health = 4;

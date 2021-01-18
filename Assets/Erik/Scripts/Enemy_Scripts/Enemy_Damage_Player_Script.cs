@@ -8,6 +8,8 @@ public class Enemy_Damage_Player_Script : MonoBehaviour
     [Range(1, 5)] [SerializeField] int damage = 1;
     Quaternion startRot;
     BoxCollider2D attackSquare;
+    [SerializeField] AudioSource zap;
+    AudioClip zzaapp;
     private void Start()
     {
         player = GameObject.Find("Player");
@@ -34,6 +36,7 @@ public class Enemy_Damage_Player_Script : MonoBehaviour
         Quaternion shit = Quaternion.LookRotation(dir);
         transform.rotation = Quaternion.Euler(0, 0, (shit.eulerAngles.x) * -transform.parent.transform.localScale.x);
         attackSquare.enabled = true;
+        zap.PlayOneShot(zap.clip, 1);
         Invoke("ResetAttack", 0.5f);
     }
     private void ResetAttack()
