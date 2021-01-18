@@ -17,6 +17,15 @@ public class Player_Ball_Movement_And_Dash : MonoBehaviour
 
     LayerMask groundLayer = 1 << 9;
 
+    private void Awake()
+    {
+        if (PlayerPrefs.GetInt("respawn") == 1)
+        {
+            transform.position = new Vector2(PlayerPrefs.GetFloat("xspawnpos"), PlayerPrefs.GetFloat("yspawnpos"));
+            if (PlayerPrefs.GetInt("upgrade") == 1) chipUpgrade = true;
+        }
+    }
+
     void Update()
     {
         if (timeStop)

@@ -1746,7 +1746,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2338542671119341095}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -4442,11 +4442,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 7190800247403851913}
   settingMenu: {fileID: 4934772186043253341}
-  sliddare:
-  - {fileID: 0}
-  - {fileID: 68139184652738657}
-  - {fileID: 1347707467740587322}
-  - {fileID: 4140625841375043657}
 --- !u!1 &6838954251498297209
 GameObject:
   m_ObjectHideFlags: 0
