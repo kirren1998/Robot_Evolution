@@ -17,7 +17,6 @@ public class Boss_Arm_Follow_Player_Script : MonoBehaviour
         startingPos = transform.position;
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.Find("Player");
-        rb.angularVelocity = -1000;
         platform = transform.parent.GetChild(1).gameObject;
         platform.SetActive(false);
     }

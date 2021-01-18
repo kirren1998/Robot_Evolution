@@ -37,6 +37,7 @@ public class Player_Health_script : MonoBehaviour
     }
     public void Death()
     {
+        PlayerPrefs.Save();
         transform.GetChild(0).GetComponent<Player_Camera_Follow_Script>().GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
         transform.GetChild(0).GetComponent<Player_Camera_Follow_Script>().enabled = false;
         if (GameObject.Find("PauseScreen")) GameObject.Find("PauseScreen").GetComponent<Pause_Screen_Script>().GameOver();

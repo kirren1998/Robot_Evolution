@@ -58,12 +58,15 @@
   <ItemGroup>
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Mech_Movement.cs" />
     <Compile Include="Assets\Cameramove.cs" />
+    <Compile Include="Assets\UpdatePlayer.cs" />
     <Compile Include="Assets\Erik\Scripts\Misc_Scripts\Elevator_Button_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Misc_Scripts\Shit_Holder_script.cs" />
     <Compile Include="Assets\Erik\Scripts\Vent_Scripts\Vent_Holder_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Boss_Scripts\Boss_Main_Script.cs" />
+    <Compile Include="Assets\Eric\Scripts\LightFade.cs" />
     <Compile Include="Assets\CamFollow.cs" />
     <Compile Include="Assets\Erik\Scripts\Vent_Scripts\Vent_Node_Wrong_Path_Script.cs" />
+    <Compile Include="Assets\Eric\Scripts\MainMenuButtons.cs" />
     <Compile Include="Assets\Erik\Scripts\Misc_Scripts\Elevator_Function_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Enemy_Scripts\Enemy_AI_Patrolling_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Camera_Follow_Script.cs" />
@@ -75,6 +78,7 @@
     <Compile Include="Assets\LOOK_AT_ME.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Health_script.cs" />
     <Compile Include="Assets\Erik\Scripts\Misc_Scripts\Circuitboard_Pickup_Script.cs" />
+    <Compile Include="Assets\Arm.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Ball_Vent_Script.cs" />
     <Compile Include="Assets\Erik\Scripts\Mech_Scripts\Mech_Movement_1.cs" />
     <Compile Include="Assets\Erik\Scripts\Mech_Scripts\Mech_Attack_Melee_1.cs" />
@@ -86,13 +90,15 @@
     <Compile Include="Assets\Erik\Scripts\Boss_Scripts\Boss_Arm_Follow_Player_Script.cs" />
     <Compile Include="Assets\Erik\ExperimentalStuff\WorldState.cs" />
     <Compile Include="Assets\Erik\Scripts\Boss_Scripts\Trigger_Boss_Script.cs" />
+    <Compile Include="Assets\Erik\Scripts\Mech_Scripts\Mech_Health.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Face_Tracking.cs" />
     <Compile Include="Assets\Erik\Scripts\Vent_Scripts\Vent_Entrance_Script.cs" />
+    <Compile Include="Assets\CheckPoint_Script.cs" />
     <Compile Include="Assets\Oscar\Sprites\Decorations\Parallax.cs" />
     <Compile Include="Assets\Erik\Scripts\Misc_Scripts\Instantiate_Shit.cs" />
     <Compile Include="Assets\Erik\Scripts\Enemy_Scripts\General_Health_Enemies.cs" />
     <Compile Include="Assets\Erik\Scripts\Player_Scripts\Player_Ball_Movement_And_Dash.cs" />
-    <Compile Include="Assets\Erik\Scripts\Mech_Scripts\Mech_Health.cs" />
+    <Compile Include="Assets\EYE_can_see_you.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Erik\test.txt" />

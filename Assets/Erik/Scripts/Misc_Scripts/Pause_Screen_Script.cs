@@ -54,6 +54,6 @@ public class Pause_Screen_Script : MonoBehaviour
     public void GameOver()
     {
         transform.GetChild(2).gameObject.SetActive(true);
-        //GetComponentInChildren<Canvas_Animation_Script>().GameOver();
+        GetComponentInChildren<Canvas_Animation_Script>().GameOver();
     }
 }
