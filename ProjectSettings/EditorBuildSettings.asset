@@ -5,13 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Eric/Level Stage 1.unity
-    guid: d8ce1ad261a49514bb2e750fb87fbba7
-  - enabled: 0
-    path: Assets/Eric/SandBox.unity
-    guid: 9fc7efecb868bbd4e8efaeacc7b55566
   - enabled: 1
-    path: Assets/Oscar/Oscar Playground.unity
-    guid: b55deb13bdda3084b813b2adbe01c1de
+    path: Assets/Eric/Boot Screen.unity
+    guid: 4a3c147e71a855f439cc61f98c0b8bfb
+  - enabled: 1
+    path: Assets/Eric/Level Stage 2.unity
+    guid: 43dc5fc7f6a3caa45aca22e92d874c31
   m_configObjects: {}
