@@ -25,8 +25,12 @@ public class Boss_Arm_Follow_Player_Script : MonoBehaviour
         
         if (!attackPlayer && !resetting && !pauseForEffect)
         {
-            Vector2 dir = startingPos - transform.position;
-            rb.velocity = dir.normalized;
+            if (Vector2.Distance(startingPos, transform.position) > 0.1f)
+            {
+                Vector2 dir = startingPos - transform.position;
+                rb.velocity = dir.normalized;
+            }
+            else rb.velocity = Vector2.zero;
             return;
         }
         if (resetting)
@@ -45,7 +49,7 @@ public class Boss_Arm_Follow_Player_Script : MonoBehaviour
             {
                 bossMain.GetComponent<Boss_Main_Script>().paused = false;
                 resetting = false;
-                GetComponent<CircleCollider2D>().enabled = true;
+                GetComponent<BoxCollider2D>().enabled = true;
                 platform.SetActive(false);
             }
             return;
