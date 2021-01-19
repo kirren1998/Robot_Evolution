@@ -19,10 +19,12 @@ public class Vent_Node_Wrong_Path_Script : MonoBehaviour
     }
     private IEnumerator ChangePath()
     {
+        GameObject light = Instantiate(GameObject.Find("ShitHolder").GetComponent<Shit_Holder_script>().Shit[3]);
         going = true;
         int count = ventPath.Count;
         for (int i = 0; i < count; i++)
         {
+            light.transform.position = ventPath[ventPath.Count - 1].transform.position;
             Destroy(ventPath[ventPath.Count - 1]);
             ventPath.RemoveAt(ventPath.Count - 1);
             if (!active)
@@ -46,6 +48,7 @@ public class Vent_Node_Wrong_Path_Script : MonoBehaviour
             GameObject vent = Instantiate(newVentPath, start.transform.position + (direction * ((a + 1) * dist)),
                 Quaternion.FromToRotation(start.transform.position,
                 end.transform.position).normalized, GameObject.Find("ShitHolder").transform);
+            light.transform.position = vent.transform.position;
             if (direction.x < 0)
                 vent.transform.rotation = Quaternion.Euler(0, 0, lookDir.eulerAngles.x);
             else
@@ -55,6 +58,7 @@ public class Vent_Node_Wrong_Path_Script : MonoBehaviour
                 yield return new WaitForSecondsRealtime(0.14f);
         }
         GameObject.Find("Main Camera").GetComponent<Player_Camera_Follow_Script>().EndVentWatching();
+        Destroy(light);
         going = false;
         active = false;
     }

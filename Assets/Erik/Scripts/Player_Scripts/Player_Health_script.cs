@@ -10,9 +10,11 @@ public class Player_Health_script : MonoBehaviour
     int Health = 4;
     public Sprite[] mood;
     public Sprite angery;
-
+    [SerializeField] AudioSource AS;
+    public AudioClip[] music;
     public void Start()
     {
+        AS = GetComponent<AudioSource>();
         PFT.GetComponent<SpriteRenderer>().sprite = mood[Health - 1];
     }
     public void FixedUpdate()
@@ -67,5 +69,15 @@ public class Player_Health_script : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
         GetComponent<SpriteRenderer>().color = Color.white;
         canTakeDamage = true;
+    }
+    public void PlayMusic(int track)
+    {
+        StopMusic();
+        AS.clip = music[track];
+        AS.Play();
+    }
+    public void StopMusic()
+    {
+        AS.Stop();
     }
 }

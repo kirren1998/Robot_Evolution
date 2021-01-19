@@ -21,9 +21,15 @@ public class Vent_Entrance_Script : MonoBehaviour
                 penis.GetComponent<Enemy_AI_Patrolling_Script>().seen = false;
                 penis.GetComponent<Enemy_AI_Patrolling_Script>().awareness = 0;
             }
-            Player.GetComponent<SpriteRenderer>().enabled = false;
+            SpriteRenderer[] yeet = Player.GetComponentsInChildren<SpriteRenderer>();
+            foreach (SpriteRenderer man in yeet)
+            {
+                man.enabled = false;
+            }
+            //Player.GetComponent<Player_Ball_Vent_Script>().ResetList(yeet);
+            /*Player.GetComponent<SpriteRenderer>().enabled = false;
             Player.transform.GetChild(2).GetComponent<SpriteRenderer>().enabled = false;
-            Player.GetComponent<CircleCollider2D>().enabled = false;
+            */Player.GetComponent<CircleCollider2D>().enabled = false;
             Player.GetComponent<Rigidbody2D>().gravityScale = 0;
             Player.GetComponent<Player_Ball_Movement_And_Dash>().inVent = true;
             Player.GetComponent<Player_Ball_Vent_Script>().inVent = true;

@@ -43,7 +43,10 @@ public class Player_Camera_Follow_Script : MonoBehaviour
     {
         GameObject törnrosa = me.GetComponent<Lever_Script>().leverConnection;
         if (me.GetComponent<Lever_Script>().noCamChange)
+        {
+            vent = törnrosa;
             vent.GetComponent<Vent_Node_Wrong_Path_Script>().StartPathChange(true);
+        }
         else
         {
             followPlayer = false;

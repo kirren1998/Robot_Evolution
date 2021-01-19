@@ -8,6 +8,7 @@ public class Player_Ball_Vent_Script : MonoBehaviour
     Rigidbody2D rb;
     public GameObject currentNode, pauseScreen;
     public bool inVent = false;
+    List<SpriteRenderer> srList;
 
     private void Start()
     {
@@ -29,8 +30,14 @@ public class Player_Ball_Vent_Script : MonoBehaviour
                 else currentNode = currentNode.transform.GetChild(0).gameObject;
             } else
             {
+                SpriteRenderer[] yeet = GetComponentsInChildren<SpriteRenderer>();
+                foreach (SpriteRenderer man in yeet)
+                {
+                    man.enabled = true;
+                }
+                /*foreach (SpriteRenderer man in srList) man.enabled = true;
                 GetComponent<SpriteRenderer>().enabled = true;
-                transform.GetChild(2).GetComponent<SpriteRenderer>().enabled = true;
+                transform.GetChild(2).GetComponent<SpriteRenderer>().enabled = true;*/
                 GetComponent<Rigidbody2D>().gravityScale = 1;
                 inVent = false;
                 GetComponent<Player_Ball_Movement_And_Dash>().inVent = false;
@@ -39,6 +46,13 @@ public class Player_Ball_Vent_Script : MonoBehaviour
             }
         }
     // new Vector2(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y)) == new Vector2(Mathf.RoundToInt(node[currentNode].transform.position.x), Mathf.RoundToInt(node[currentNode].transform.position.y
-
+    }
+    public void ResetList(SpriteRenderer[] SR)
+    {
+        Debug.Log(SR);
+        foreach (SpriteRenderer man in SR)
+        {
+            srList.Add(man);
+        }
     }
 }

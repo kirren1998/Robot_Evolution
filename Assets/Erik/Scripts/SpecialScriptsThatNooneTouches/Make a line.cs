@@ -41,6 +41,7 @@ public class Makealine : EditorWindow
             GameObject ventEntrance = Selection.gameObjects[0].transform.parent.gameObject;
             GameObject ventPath = shit.GetComponent<Shit_Holder_script>().Shit[0], lever = shit.GetComponent<Shit_Holder_script>().Shit[1];
             ventEntrance.GetComponentInChildren<SpriteRenderer>().sprite = shit.GetComponent<Shit_Holder_script>().Vents[0];
+            
             float dist = 0.25f;
             int iterations = 2;
             for (int me = 0; me < iterations; me++)
@@ -51,7 +52,12 @@ public class Makealine : EditorWindow
                     GameObject start, end;
                     start = ventEntrance.transform.GetChild(i - 1).gameObject;
                     end = ventEntrance.transform.GetChild(i).gameObject;
-                    end.GetComponent<SpriteRenderer>().sprite = shit.GetComponent<Shit_Holder_script>().Vents[0];
+                    end.GetComponent<SpriteRenderer>().sortingOrder = 100;
+                    end.GetComponent<SpriteRenderer>().sortingLayerID = 0;
+                    int rand = Random.Range(0, shit.GetComponent<Shit_Holder_script>().Vents.Length); 
+                    if (rand == 0)
+                        Instantiate(shit.GetComponent<Shit_Holder_script>().Shit[2], end.transform.position, Quaternion.identity, shit.transform.GetChild(1).transform);
+                    end.GetComponent<SpriteRenderer>().sprite = shit.GetComponent<Shit_Holder_script>().Vents[rand];
                     float distance = Vector3.Distance(start.transform.position, end.transform.position);
                     int ventCount = Mathf.RoundToInt(distance / dist);
                     Vector3 direction = (end.transform.position - start.transform.position);
