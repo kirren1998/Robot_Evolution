@@ -8,11 +8,15 @@ public class Darlek_Enemy_Script : MonoBehaviour
     GameObject player;
     Light2D torch;
     BoxCollider2D attack;
+    AudioSource AS;
+    [SerializeField] AudioClip[] AC;
     // Start is called before the first frame update
     void Start()
     {
+        AS = GetComponent<AudioSource>();
         player = GameObject.Find("Player");
         torch = transform.GetChild(0).GetChild(0).GetComponent<Light2D>();
+        InvokeRepeating("Talk", 2, Random.Range(10f, 20f));
     }
 
     // Update is called once per frame
@@ -36,6 +40,10 @@ public class Darlek_Enemy_Script : MonoBehaviour
             if (torch.pointLightOuterAngle < 95) torch.pointLightOuterAngle += Time.deltaTime * 50;
             torch.color = new Color(1, Mathf.Clamp(torch.color.g + Time.deltaTime / 10, 0, 1), 0);
         }
+    }
+    void Talk()
+    {
+        AS.PlayOneShot(AC[Random.Range(0, AC.Length)]);
     }
 }
             /*Vector3 playerPos = player.transform.position;

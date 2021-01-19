@@ -6,13 +6,12 @@ public class CheckPoint_Script : MonoBehaviour
 {
     Canvas checkpointReached;
     bool checkpointTouched;
-    [SerializeField] bool shouldIHaveTheUpgradeByNow = false;
 
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && collision.isTrigger && !checkpointReached)
+        if (collision.CompareTag("Player") && collision.isTrigger && !checkpointTouched)
         {
             PlayerPrefs.SetFloat("xspawnpos", transform.position.x);
             PlayerPrefs.SetFloat("yspawnpos", transform.position.y);
