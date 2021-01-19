@@ -22,6 +22,7 @@ public class Trigger_Boss_Script : MonoBehaviour
             GameObject.Find("Boss").GetComponent<Boss_Main_Script>().enabled = true;
             transform.GetChild(0).GetComponent<BoxCollider2D>().enabled = true;
             transform.GetChild(1).GetComponent<BoxCollider2D>().enabled = true;
+            collision.GetComponent<Player_Ball_Movement_And_Dash>().inBossFight = true;
         }
     }
 }

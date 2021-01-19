@@ -9,6 +9,7 @@ public class Boss_Arm_Follow_Player_Script : MonoBehaviour
     Rigidbody2D rb;
     GameObject player, bossMain;
     public GameObject platform;
+    float speedUp;
     Vector3 startingPos;
 
     private void Start()
@@ -57,10 +58,12 @@ public class Boss_Arm_Follow_Player_Script : MonoBehaviour
         if (Physics2D.Raycast(transform.position, Vector2.down, 3, playerLayer))
         {
             goindDown = true;
+            speedUp = 0;
         }
         if (!pauseForEffect && goindDown)
         {
-            rb.velocity = new Vector2(0, -1 * bossMain.GetComponent<Boss_Main_Script>().bossStatus);
+            rb.velocity = new Vector2(0, -1 * bossMain.GetComponent<Boss_Main_Script>().bossStatus - speedUp);
+            speedUp += Time.deltaTime * 5;
         }
         else if (!pauseForEffect && !goindDown)
         {
