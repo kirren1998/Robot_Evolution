@@ -13,7 +13,7 @@ public class Vent_Entrance_Script : MonoBehaviour
     private void OnTriggerStay2D(Collider2D player)
     {
         if (player.name != "Player") return;
-        if (Input.GetKey(KeyCode.E) && player.GetComponent<Player_Ball_Vent_Script>().currentNode == null)
+        else if (Input.GetKey(KeyCode.E) && player.GetComponent<Player_Ball_Vent_Script>().currentNode == null)
         {
             GameObject[] me = GameObject.FindGameObjectsWithTag("AI_VisionCones");
             foreach (GameObject penis in me)
@@ -28,6 +28,12 @@ public class Vent_Entrance_Script : MonoBehaviour
             Player.GetComponent<Player_Ball_Movement_And_Dash>().inVent = true;
             Player.GetComponent<Player_Ball_Vent_Script>().inVent = true;
             Player.GetComponent<Player_Ball_Vent_Script>().currentNode = transform.gameObject;
+            if (player.GetComponent<Player_Ball_Movement_And_Dash>().inBossFight)
+            {
+                player.GetComponentInChildren<Player_Camera_Follow_Script>().followPlayer = true;
+                Destroy(gameObject.transform.parent.parent.gameObject, 6);
+                player.GetComponent<Player_Ball_Movement_And_Dash>().inBossFight = false;
+            }
         }
     }
 }

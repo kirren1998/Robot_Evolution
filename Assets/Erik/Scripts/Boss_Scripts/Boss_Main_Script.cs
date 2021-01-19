@@ -6,10 +6,10 @@ public class Boss_Main_Script : MonoBehaviour
 {
     GameObject player, rightArm, leftArm, activeArm;
     //float activationTimer;
-    public bool paused;
+    public bool paused, Dissable, dead;
     public int bossHealth = 10, bossStatus = 1, gettingTired;
 
-
+    
     void Start()
     {
         player = GameObject.Find("Player");
@@ -24,7 +24,13 @@ public class Boss_Main_Script : MonoBehaviour
         if (activationTimer <= 0)
             BustAMoveCraig();*/
         if (paused) return;
-        if (player.transform.position.x > transform.position.x)
+        if (dead)
+        {
+            if (transform.position.y > player.transform.position.y + 0.2f)
+                transform.position = new Vector2(transform.position.x, transform.position.y - 0.01f);
+            return;
+        }
+        else if (player.transform.position.x > transform.position.x)
         {
             if (rightArm.GetComponent<Boss_Arm_Follow_Player_Script>().attackPlayer == false)
             {
@@ -52,8 +58,10 @@ public class Boss_Main_Script : MonoBehaviour
         Debug.Log(bossHealth);
         if (bossHealth < 1)
         {
-            player.GetComponentInChildren<Player_Camera_Follow_Script>().followPlayer = false;
-            Destroy(gameObject);
+            dead = true;
+            rightArm.GetComponent<Boss_Arm_Follow_Player_Script>().attackPlayer = false;
+            leftArm.GetComponent<Boss_Arm_Follow_Player_Script>().attackPlayer = false;
+            transform.GetChild(3).gameObject.SetActive(true);
         }
         else if (bossHealth < 3)
         {

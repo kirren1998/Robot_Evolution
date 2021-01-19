@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class Arm : MonoBehaviour
 {
-    [Range (1, 5)][SerializeField] float butt;
+    [Range (0, 1)][SerializeField] float butt;
     [SerializeField] Animator arm;
     Player_Ball_Movement_And_Dash player;
 
     private void Start()
     {
         player = GetComponentInParent<Player_Ball_Movement_And_Dash>();
-    }
-    public void Jumpstart()
-    {
-        Invoke("Jumpfinish", butt);
     }
     public void Jumpfinish()
     {
@@ -26,9 +22,7 @@ public class Arm : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            arm.SetBool("Jump", true);
-        }
+        if (Input.GetKeyDown(KeyCode.Space)) arm.SetBool("Jump", true);
+        if (Input.GetKeyUp(KeyCode.Space)) arm.SetBool("Jump", false);
     }
 }
