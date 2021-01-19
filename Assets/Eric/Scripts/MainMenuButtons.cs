@@ -10,6 +10,7 @@ public class MainMenuButtons : MonoBehaviour
     public void PlayButtonPress()
     {
         GameObject.Find("Global light").GetComponent<LightFade>().fadingPlay = true;
+        PlayerPrefs.DeleteAll();
     }
 
     public void LoadNextScene()

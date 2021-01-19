@@ -7,7 +7,10 @@ public class CheckPoint_Script : MonoBehaviour
     Canvas checkpointReached;
     bool checkpointTouched;
 
-
+    private void Start()
+    {
+        checkpointReached = transform.GetChild(0).GetComponent<Canvas>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

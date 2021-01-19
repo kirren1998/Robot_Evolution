@@ -19,10 +19,11 @@ public class Player_Ball_Movement_And_Dash : MonoBehaviour
 
     private void Awake()
     {
-        if (PlayerPrefs.GetInt("respawn") == 1)
+        if (PlayerPrefs.GetInt("restart") == 1)
         {
             transform.position = new Vector2(PlayerPrefs.GetFloat("xspawnpos"), PlayerPrefs.GetFloat("yspawnpos"));
             if (PlayerPrefs.GetInt("upgrade") == 1) chipUpgrade = true;
+            if (PlayerPrefs.GetString("HasArm") == "TRUE") transform.GetChild(5).gameObject.SetActive(true);
         }
     }
 

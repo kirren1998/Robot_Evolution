@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PickMeUpScotty : MonoBehaviour
 {
+
+    private void Start()
+    {
+        if (PlayerPrefs.GetString("HasArm") == "TRUE") Destroy(gameObject);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag != "Player") return;
