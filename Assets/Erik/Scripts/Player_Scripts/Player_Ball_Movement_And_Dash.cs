@@ -13,7 +13,7 @@ public class Player_Ball_Movement_And_Dash : MonoBehaviour
     [SerializeField] float chargeTimer, chargeTime;
 
     public int Damage = 0;
-    public bool IsCharging, hasMech, inVent, timeStop, chipUpgrade;
+    public bool IsCharging, hasMech, inVent, timeStop, chipUpgrade, inBossFight;
 
     LayerMask groundLayer = 1 << 9;
 

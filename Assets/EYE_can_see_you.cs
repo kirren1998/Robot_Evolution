@@ -11,6 +11,7 @@ public class EYE_can_see_you : MonoBehaviour
     private void Start()
     {
         player = GameObject.Find("Player");
+        StartCoroutine(CloseEye());
     }
     void Update()
     {
@@ -25,5 +26,20 @@ public class EYE_can_see_you : MonoBehaviour
                 eyeParts[i].transform.position = new Vector2(eyeParts[i - 1].transform.position.x + ((-distance[i] * direction.normalized.x) * dis / 4), eyeParts[i - 1].transform.position.y + ((-distance[i] * direction.normalized.y) * dis / 4));
             }
         }
+        else
+        {
+            for (int i = 0; i < eyeParts.Length; i++)
+            {
+                eyeParts[i].transform.localPosition = Vector2.zero;
+            }
+        }
+    }
+    IEnumerator CloseEye()
+    {
+        focus = false;
+        yield return new WaitForSecondsRealtime(1);
+        focus = true;
+        yield return new WaitForSecondsRealtime(Random.Range(2f, 10f));
+        StartCoroutine(CloseEye());
     }
 }
