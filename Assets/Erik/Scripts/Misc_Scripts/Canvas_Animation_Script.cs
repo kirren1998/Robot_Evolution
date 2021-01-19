@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class Canvas_Animation_Script : MonoBehaviour
 {
-    [SerializeField] Text gameOver;
-    [SerializeField] GameObject restart, restartFromCheckpoint, quit;
+    
+    [SerializeField] GameObject restart, restartFromCheckpoint, quit, gameOver;
     public void GameOver()
     {
-        gameOver.CrossFadeAlpha(255, 1, true);
+        gameOver.SetActive(true);
+        gameOver.GetComponent<Text>().CrossFadeAlpha(255, 1, true);
         StartCoroutine(Emu());
     }
     private IEnumerator Emu()
